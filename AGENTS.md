@@ -177,7 +177,7 @@ npm test
   the extension ID (`ekblcghnfjnonhcjfkejigolmpelmeph`). Locally the key is
   `geckoshot.pem` (git-ignored). Never commit a key, never print it, and
   never replace the secret: a new key means a new extension ID and breaks
-  existing installs. CI refuses to build without it.
+  existing installs. Release (tag) builds refuse to run without it.
 - To release: bump `version` in `manifest.json`, commit, then tag `v<version>`
   and push the tag. The workflow fails if the tag and manifest disagree. Only
   release when the human asks.
