@@ -82,7 +82,7 @@ browser. There is no build step: the files in the repo are what ships.
 | `tools/import-firefox-l10n.py` | Regenerates `_locales/` | none |
 | `test/e2e.mjs`, `test/page.html` | End-to-end test in Playwright Chromium | none |
 | `tools/build.mjs` | `npm run build`: packages `dist/geckoshot-<version>.crx` and `.zip` | none |
-| `.github/workflows/ci.yml` | Builds every push/PR; on a `v*` tag, publishes a GitHub Release (no tests in CI) | none |
+| `.github/workflows/ci.yml` | Builds every push/PR; when a GitHub Release is published, attaches the CRX and ZIP to it (no tests in CI) | none |
 
 ## How it fits together
 
@@ -178,9 +178,11 @@ npm test
   `geckoshot.pem` (git-ignored). Never commit a key, never print it, and
   never replace the secret: a new key means a new extension ID and breaks
   existing installs. Release (tag) builds refuse to run without it.
-- To release: bump `version` in `manifest.json`, commit, then tag `v<version>`
-  and push the tag. The workflow fails if the tag and manifest disagree. Only
-  release when the human asks.
+- To release: bump `version` in `manifest.json` and commit. The human then
+  publishes a GitHub Release with tag `v<version>` and their own changelog;
+  CI builds that tag and attaches the CRX and ZIP. The workflow fails if the
+  tag and manifest disagree. Never create releases or tags yourself unless
+  the human asks, and never edit release notes.
 
 ## Translations
 

@@ -28,7 +28,7 @@ let keyPath = path.join(root, "geckoshot.pem");
 if (process.env.CRX_PRIVATE_KEY) {
   keyPath = path.join(fs.mkdtempSync(path.join(os.tmpdir(), "crx-")), "key.pem");
   fs.writeFileSync(keyPath, process.env.CRX_PRIVATE_KEY, { mode: 0o600 });
-} else if (process.env.GITHUB_REF_TYPE === "tag") {
+} else if (process.env.RELEASE_TAG) {
   // Releases must keep the extension ID. (Other CI builds, e.g. pull requests
   // from forks, don't get secrets and sign with a throwaway key.)
   throw new Error("CRX_PRIVATE_KEY is not set; refusing to release with a throwaway key.");
