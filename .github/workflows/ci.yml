@@ -1,0 +1,81 @@
+# Tests every push and pull request, packages the extension, and publishes a
+# GitHub Release with the CRX and ZIP when a version tag (v1.2.3) is pushed.
+
+name: CI
+
+on:
+  push:
+    branches: [main]
+    tags: ["v*"]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npx playwright install --with-deps chromium
+      - run: npm test
+        env:
+          SCREENSHOTS_OUT: test-screenshots
+      - name: Keep test screenshots
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-screenshots
+          path: test-screenshots
+
+  package:
+    needs: test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Check the tag matches manifest.json
+        if: startsWith(github.ref, 'refs/tags/v')
+        run: |
+          version=$(node -p "require('./manifest.json').version")
+          if [ "v$version" != "$GITHUB_REF_NAME" ]; then
+            echo "::error::Tag $GITHUB_REF_NAME doesn't match manifest.json version $version"
+            exit 1
+          fi
+      - run: npm run build
+        env:
+          CRX_PRIVATE_KEY: ${{ secrets.CRX_PRIVATE_KEY }}
+      - uses: actions/upload-artifact@v4
+        with:
+          name: geckoshot
+          path: dist/*
+
+  release:
+    if: startsWith(github.ref, 'refs/tags/v')
+    needs: package
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: geckoshot
+          path: dist
+      - name: Publish the release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create "$GITHUB_REF_NAME" dist/* \
+            --repo "$GITHUB_REPOSITORY" \
+            --title "GeckoShot $GITHUB_REF_NAME" \
+            --generate-notes \
+            --notes "**Which file?** Chrome, Edge and Brave on Windows/macOS only allow extensions from the Web Store, so download the \`.zip\`, unzip it, and use *Load unpacked* on \`chrome://extensions\` (Developer mode). Helium, ungoogled-chromium and Chromium on Linux can install the \`.crx\` directly."

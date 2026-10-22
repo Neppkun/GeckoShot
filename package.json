@@ -2,9 +2,11 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "test": "node test/e2e.mjs"
+    "test": "node test/e2e.mjs",
+    "build": "node tools/build.mjs"
   },
   "devDependencies": {
+    "crx3": "^2.0.0",
     "playwright": "^1.64.1"
   }
 }

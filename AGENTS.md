@@ -81,6 +81,8 @@ browser. There is no build step: the files in the repo are what ships.
 | `_locales/` | Generated from Firefox's Fluent files; don't hand-edit | `screenshots.ftl` etc. |
 | `tools/import-firefox-l10n.py` | Regenerates `_locales/` | none |
 | `test/e2e.mjs`, `test/page.html` | End-to-end test in Playwright Chromium | none |
+| `tools/build.mjs` | `npm run build`: packages `dist/geckoshot-<version>.crx` and `.zip` | none |
+| `.github/workflows/ci.yml` | Tests every push/PR; on a `v*` tag, builds and publishes a GitHub Release | none |
 
 ## How it fits together
 
@@ -165,6 +167,20 @@ npm test
   screenshots, so look at them after UI changes.
 - After UI changes, also check a real site in both light and dark mode
   (Playwright `colorScheme`).
+
+## Building and releasing
+
+- `npm run build` packages only the shipped files (`SHIPPED` in
+  `tools/build.mjs`). If you add a top-level file or folder the extension
+  needs at runtime, add it there too.
+- The CRX is signed with the `CRX_PRIVATE_KEY` repository secret, which fixes
+  the extension ID (`ekblcghnfjnonhcjfkejigolmpelmeph`). Locally the key is
+  `geckoshot.pem` (git-ignored). Never commit a key, never print it, and
+  never replace the secret: a new key means a new extension ID and breaks
+  existing installs. CI refuses to build without it.
+- To release: bump `version` in `manifest.json`, commit, then tag `v<version>`
+  and push the tag. The workflow fails if the tag and manifest disagree. Only
+  release when the human asks.
 
 ## Translations
 

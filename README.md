@@ -17,13 +17,21 @@ the same way Firefox does. The look is restyled to fit in with
 
 ## Install
 
-The extension isn't in the Chrome Web Store yet, so for now:
+GeckoShot isn't in the Chrome Web Store yet. Get the latest version from the
+[Releases page](https://github.com/Neppkun/GeckoShot/releases/latest).
 
-1. Download or clone this repository.
+**Chrome, Edge, Brave and Vivaldi** (these only allow store extensions to be
+installed from a file, so use the ZIP):
+
+1. Download `geckoshot-<version>.zip` and unzip it somewhere you'll keep it.
 2. Open `chrome://extensions` (`edge://extensions` in Edge) and turn on
    **Developer mode**.
-3. Click **Load unpacked** and choose the repository folder.
-4. Optionally pin the GeckoShot button to your toolbar.
+3. Click **Load unpacked** and choose the unzipped folder.
+
+**Helium, ungoogled-chromium, or Chromium on Linux:** download
+`geckoshot-<version>.crx` and drag it onto `chrome://extensions`.
+
+Then optionally pin the GeckoShot button to your toolbar.
 
 ## How to use it
 
@@ -95,7 +103,8 @@ npm test
 ```
 
 The tests load the extension into a real Chromium and use it the way a person
-would. `HEADED=1 npm test` lets you watch.
+would. `HEADED=1 npm test` lets you watch. `npm run build` writes the CRX and
+ZIP to `dist/`.
 
 If you use an AI coding agent, point it at [AGENTS.md](AGENTS.md). Among other
 things, it requires agents to say which model they are and how involved a
