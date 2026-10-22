@@ -1,0 +1,100 @@
+{
+  "screenshot_toolbar_button_label": {
+    "message": "Tangkapan Layar"
+  },
+  "screenshot_toolbar_button_tooltiptext": {
+    "message": "Ambil tangkapan layar ($SHORTCUT$)",
+    "placeholders": {
+      "shortcut": {
+        "content": "$1"
+      }
+    }
+  },
+  "screenshots_instructions": {
+    "message": "Seret atau klik pada laman untuk memilih area. Tekan ESC untuk membatalkan."
+  },
+  "screenshots_cancel_button": {
+    "message": "Batal"
+  },
+  "screenshots_save_visible_button": {
+    "message": "Simpan yang terlihat"
+  },
+  "screenshots_save_page_button": {
+    "message": "Simpan laman sepenuhnya"
+  },
+  "screenshots_too_large_error_title": {
+    "message": "Tangkapan layar Anda dipotong karena terlalu besar"
+  },
+  "screenshots_too_large_error_details": {
+    "message": "Coba pilih bidang yang lebih kecil dari 32.700 piksel pada sisi terpanjangnya atau total luas 124.900.000 piksel."
+  },
+  "screenshots_component_retry_button_aria_label": {
+    "message": "Coba tangkap layar lagi"
+  },
+  "screenshots_component_retry_button_title": {
+    "message": "Coba tangkap layar lagi"
+  },
+  "screenshots_component_cancel_button_aria_label": {
+    "message": "Batal"
+  },
+  "screenshots_component_cancel_button_title": {
+    "message": "Batal (Esc)"
+  },
+  "screenshots_component_copy_button_2": {
+    "message": "Salin"
+  },
+  "screenshots_component_copy_button_2_aria_label": {
+    "message": "Salin"
+  },
+  "screenshots_component_copy_button_2_title": {
+    "message": "Salin ($SHORTCUT$)",
+    "placeholders": {
+      "shortcut": {
+        "content": "$1"
+      }
+    }
+  },
+  "screenshots_component_download_button_2": {
+    "message": "Unduh"
+  },
+  "screenshots_component_download_button_2_aria_label": {
+    "message": "Unduh"
+  },
+  "screenshots_component_download_button_2_title": {
+    "message": "Unduh ($SHORTCUT$)",
+    "placeholders": {
+      "shortcut": {
+        "content": "$1"
+      }
+    }
+  },
+  "screenshots_component_download_key": {
+    "message": "S"
+  },
+  "screenshots_component_copy_key": {
+    "message": "C"
+  },
+  "screenshots_overlay_selection_region_size_3": {
+    "message": "$WIDTH$ × $HEIGHT$",
+    "placeholders": {
+      "width": {
+        "content": "$1"
+      },
+      "height": {
+        "content": "$2"
+      }
+    }
+  },
+  "screenshots_overlay_preview_face_label_aria_label": {
+    "message": "Pilih wilayah ini"
+  },
+  "main_context_menu_take_screenshot_label": {
+    "message": "Buat Tangkapan Layar"
+  },
+  "main_context_menu_take_screenshot_accesskey": {
+    "message": "B"
+  },
+  "confirmation_hint_screenshot_copied": {
+    "message": "Tangkapan layar disalin!"
+  }
+}

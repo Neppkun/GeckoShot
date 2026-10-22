@@ -1,0 +1,89 @@
+{
+  "screenshots_instructions": {
+    "message": "Velciet vai noklikšķiniet uz lapas, lai atlasītu reģionu. Nospiediet ESC, lai atceltu."
+  },
+  "screenshots_cancel_button": {
+    "message": "Atcelt"
+  },
+  "screenshots_save_visible_button": {
+    "message": "Saglabāt redzamo"
+  },
+  "screenshots_save_page_button": {
+    "message": "Saglabāt visu lapu"
+  },
+  "screenshots_too_large_error_title": {
+    "message": "Jūsu ekrānuzņēmums tika apgriezts, jo tas bija pārāk liels"
+  },
+  "screenshots_too_large_error_details": {
+    "message": "Mēģiniet atlasīt reģionu, kura garākā mala ir mazāka par 32 700 pikseļiem vai 124 900 000 pikseļu kopējā platība."
+  },
+  "screenshots_component_retry_button_aria_label": {
+    "message": "Atkal mēģināt uzņemt ekrānu"
+  },
+  "screenshots_component_retry_button_title": {
+    "message": "Atkal mēģināt uzņemt ekrānu"
+  },
+  "screenshots_component_cancel_button_aria_label": {
+    "message": "Atcelt"
+  },
+  "screenshots_component_cancel_button_title": {
+    "message": "Atcelt (Esc)"
+  },
+  "screenshots_component_copy_button_2": {
+    "message": "Kopēt"
+  },
+  "screenshots_component_copy_button_2_aria_label": {
+    "message": "Kopēt"
+  },
+  "screenshots_component_copy_button_2_title": {
+    "message": "Kopēt ($SHORTCUT$)",
+    "placeholders": {
+      "shortcut": {
+        "content": "$1"
+      }
+    }
+  },
+  "screenshots_component_download_button_2": {
+    "message": "Lejupielādēt"
+  },
+  "screenshots_component_download_button_2_aria_label": {
+    "message": "Lejupielādēt"
+  },
+  "screenshots_component_download_button_2_title": {
+    "message": "Lejupielādēt ($SHORTCUT$)",
+    "placeholders": {
+      "shortcut": {
+        "content": "$1"
+      }
+    }
+  },
+  "screenshots_component_download_key": {
+    "message": "S"
+  },
+  "screenshots_component_copy_key": {
+    "message": "C"
+  },
+  "screenshots_overlay_selection_region_size_3": {
+    "message": "$WIDTH$ × $HEIGHT$",
+    "placeholders": {
+      "width": {
+        "content": "$1"
+      },
+      "height": {
+        "content": "$2"
+      }
+    }
+  },
+  "screenshots_overlay_preview_face_label_aria_label": {
+    "message": "Atlasīt šo apgabalu"
+  },
+  "main_context_menu_take_screenshot_label": {
+    "message": "Uzņemt ekrānuzņēmumu"
+  },
+  "main_context_menu_take_screenshot_accesskey": {
+    "message": "t"
+  },
+  "confirmation_hint_screenshot_copied": {
+    "message": "Ekrānuzņēmums nokopēts!"
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "screenshot_toolbar_button_label": {
+    "message": "截图"
+  },
+  "screenshot_toolbar_button_tooltiptext": {
+    "message": "截图（$SHORTCUT$）",
+    "placeholders": {
+      "shortcut": {
+        "content": "$1"
+      }
+    }
+  },
+  "screenshots_instructions": {
+    "message": "在此页上拖拽或单击选择截图区域。按 ESC 键取消截图。"
+  },
+  "screenshots_cancel_button": {
+    "message": "取消"
+  },
+  "screenshots_save_visible_button": {
+    "message": "截取可见范围"
+  },
+  "screenshots_save_page_button": {
+    "message": "截取整个页面"
+  },
+  "screenshots_too_large_error_title": {
+    "message": "您的屏幕截图因太大而被裁剪"
+  },
+  "screenshots_too_large_error_details": {
+    "message": "请选择长边小于 32,700 像素或总面积小于 124,900,000 像素的区域。"
+  },
+  "screenshots_component_retry_button_aria_label": {
+    "message": "重新截图"
+  },
+  "screenshots_component_retry_button_title": {
+    "message": "重新截图"
+  },
+  "screenshots_component_cancel_button_aria_label": {
+    "message": "取消"
+  },
+  "screenshots_component_cancel_button_title": {
+    "message": "取消 (Esc)"
+  },
+  "screenshots_component_copy_button_2": {
+    "message": "复制"
+  },
+  "screenshots_component_copy_button_2_aria_label": {
+    "message": "复制"
+  },
+  "screenshots_component_copy_button_2_title": {
+    "message": "复制 ($SHORTCUT$)",
+    "placeholders": {
+      "shortcut": {
+        "content": "$1"
+      }
+    }
+  },
+  "screenshots_component_download_button_2": {
+    "message": "下载"
+  },
+  "screenshots_component_download_button_2_aria_label": {
+    "message": "下载"
+  },
+  "screenshots_component_download_button_2_title": {
+    "message": "下载 ($SHORTCUT$)",
+    "placeholders": {
+      "shortcut": {
+        "content": "$1"
+      }
+    }
+  },
+  "screenshots_component_download_key": {
+    "message": "S"
+  },
+  "screenshots_component_copy_key": {
+    "message": "C"
+  },
+  "screenshots_overlay_selection_region_size_3": {
+    "message": "$WIDTH$ × $HEIGHT$",
+    "placeholders": {
+      "width": {
+        "content": "$1"
+      },
+      "height": {
+        "content": "$2"
+      }
+    }
+  },
+  "screenshots_overlay_preview_face_label_aria_label": {
+    "message": "选择此区域"
+  },
+  "main_context_menu_take_screenshot_label": {
+    "message": "截图"
+  },
+  "main_context_menu_take_screenshot_accesskey": {
+    "message": "T"
+  },
+  "confirmation_hint_screenshot_copied": {
+    "message": "截图已复制！"
+  }
+}

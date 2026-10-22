@@ -1,0 +1,14 @@
+{
+  "screenshots_instructions": {
+    "message": "பக்கத்தில் இழுத்தோ (அ) சொடுக்கியோ ஒரு பகுதியைத் தேர்வுச்செய்க. இரத்து செய்ய ESC விசையை அழுத்தவும்."
+  },
+  "screenshots_cancel_button": {
+    "message": "இரத்து"
+  },
+  "screenshots_save_visible_button": {
+    "message": "பார்ப்பதைச் சேமி"
+  },
+  "screenshots_save_page_button": {
+    "message": "முழு பக்கத்தைச் சேமி"
+  }
+}

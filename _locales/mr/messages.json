@@ -1,0 +1,14 @@
+{
+  "screenshots_instructions": {
+    "message": "प्रदेश निवडण्यासाठी पृष्ठावर ड्रॅग करा किंवा क्लिक करा. रद्द करण्यासाठी ESC दाबा."
+  },
+  "screenshots_cancel_button": {
+    "message": "रद्द करा"
+  },
+  "screenshots_save_visible_button": {
+    "message": "दृश्यमय साठवा"
+  },
+  "screenshots_save_page_button": {
+    "message": "संपूर्ण पृष्ठ साठवा"
+  }
+}

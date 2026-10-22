@@ -1,0 +1,100 @@
+{
+  "screenshot_toolbar_button_label": {
+    "message": "Στιγμιότυπο οθόνης"
+  },
+  "screenshot_toolbar_button_tooltiptext": {
+    "message": "Λήψη στιγμιότυπου οθόνης ($SHORTCUT$)",
+    "placeholders": {
+      "shortcut": {
+        "content": "$1"
+      }
+    }
+  },
+  "screenshots_instructions": {
+    "message": "Σύρετε ή κάντε κλικ στη σελίδα για να επιλέξετε μια περιοχή. Για ακύρωση πιέστε το πλήκτρο ESC."
+  },
+  "screenshots_cancel_button": {
+    "message": "Ακύρωση"
+  },
+  "screenshots_save_visible_button": {
+    "message": "Αποθήκευση ορατής περιοχής"
+  },
+  "screenshots_save_page_button": {
+    "message": "Αποθήκευση ολόκληρης σελίδας"
+  },
+  "screenshots_too_large_error_title": {
+    "message": "Το στιγμιότυπο οθόνης σας περικόπηκε επειδή ήταν πολύ μεγάλο"
+  },
+  "screenshots_too_large_error_details": {
+    "message": "Δοκιμάστε να επιλέξετε μια περιοχή μικρότερη από 32.700 pixel στη μεγαλύτερη πλευρά της ή 124.900.000 pixel σε συνολική επιφάνεια."
+  },
+  "screenshots_component_retry_button_aria_label": {
+    "message": "Επανάληψη στιγμιότυπου"
+  },
+  "screenshots_component_retry_button_title": {
+    "message": "Επανάληψη στιγμιότυπου"
+  },
+  "screenshots_component_cancel_button_aria_label": {
+    "message": "Ακύρωση"
+  },
+  "screenshots_component_cancel_button_title": {
+    "message": "Ακύρωση (Esc)"
+  },
+  "screenshots_component_copy_button_2": {
+    "message": "Αντιγραφή"
+  },
+  "screenshots_component_copy_button_2_aria_label": {
+    "message": "Αντιγραφή"
+  },
+  "screenshots_component_copy_button_2_title": {
+    "message": "Αντιγραφή ($SHORTCUT$)",
+    "placeholders": {
+      "shortcut": {
+        "content": "$1"
+      }
+    }
+  },
+  "screenshots_component_download_button_2": {
+    "message": "Λήψη"
+  },
+  "screenshots_component_download_button_2_aria_label": {
+    "message": "Λήψη"
+  },
+  "screenshots_component_download_button_2_title": {
+    "message": "Λήψη ($SHORTCUT$)",
+    "placeholders": {
+      "shortcut": {
+        "content": "$1"
+      }
+    }
+  },
+  "screenshots_component_download_key": {
+    "message": "S"
+  },
+  "screenshots_component_copy_key": {
+    "message": "C"
+  },
+  "screenshots_overlay_selection_region_size_3": {
+    "message": "$WIDTH$ × $HEIGHT$",
+    "placeholders": {
+      "width": {
+        "content": "$1"
+      },
+      "height": {
+        "content": "$2"
+      }
+    }
+  },
+  "screenshots_overlay_preview_face_label_aria_label": {
+    "message": "Επιλέξτε αυτήν την περιοχή"
+  },
+  "main_context_menu_take_screenshot_label": {
+    "message": "Λήψη στιγμιότυπου"
+  },
+  "main_context_menu_take_screenshot_accesskey": {
+    "message": "Λ"
+  },
+  "confirmation_hint_screenshot_copied": {
+    "message": "Το στιγμιότυπο αντιγράφηκε!"
+  }
+}

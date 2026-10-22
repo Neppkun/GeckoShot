@@ -1,0 +1,100 @@
+{
+  "screenshot_toolbar_button_label": {
+    "message": "Zrzut ekranu"
+  },
+  "screenshot_toolbar_button_tooltiptext": {
+    "message": "Wykonaj zrzut ekranu ($SHORTCUT$)",
+    "placeholders": {
+      "shortcut": {
+        "content": "$1"
+      }
+    }
+  },
+  "screenshots_instructions": {
+    "message": "Przeciągnij lub kliknij na stronie, aby zaznaczyć obszar. Naciśnij klawisz Esc, aby anulować."
+  },
+  "screenshots_cancel_button": {
+    "message": "Anuluj"
+  },
+  "screenshots_save_visible_button": {
+    "message": "Zapisz widoczne"
+  },
+  "screenshots_save_page_button": {
+    "message": "Zapisz całą stronę"
+  },
+  "screenshots_too_large_error_title": {
+    "message": "Zrzut ekranu został przycięty, ponieważ był za duży"
+  },
+  "screenshots_too_large_error_details": {
+    "message": "Spróbuj zaznaczyć obszar, który ma mniej niż 32 700 pikseli na najdłuższym boku lub mniej niż 124 900 000 pikseli łącznej powierzchni."
+  },
+  "screenshots_component_retry_button_aria_label": {
+    "message": "Ponów zrzut ekranu"
+  },
+  "screenshots_component_retry_button_title": {
+    "message": "Ponów zrzut ekranu"
+  },
+  "screenshots_component_cancel_button_aria_label": {
+    "message": "Anuluj"
+  },
+  "screenshots_component_cancel_button_title": {
+    "message": "Anuluj (Esc)"
+  },
+  "screenshots_component_copy_button_2": {
+    "message": "Kopiuj"
+  },
+  "screenshots_component_copy_button_2_aria_label": {
+    "message": "Kopiuj"
+  },
+  "screenshots_component_copy_button_2_title": {
+    "message": "Kopiuj ($SHORTCUT$)",
+    "placeholders": {
+      "shortcut": {
+        "content": "$1"
+      }
+    }
+  },
+  "screenshots_component_download_button_2": {
+    "message": "Pobierz"
+  },
+  "screenshots_component_download_button_2_aria_label": {
+    "message": "Pobierz"
+  },
+  "screenshots_component_download_button_2_title": {
+    "message": "Pobierz ($SHORTCUT$)",
+    "placeholders": {
+      "shortcut": {
+        "content": "$1"
+      }
+    }
+  },
+  "screenshots_component_download_key": {
+    "message": "S"
+  },
+  "screenshots_component_copy_key": {
+    "message": "C"
+  },
+  "screenshots_overlay_selection_region_size_3": {
+    "message": "$WIDTH$×$HEIGHT$",
+    "placeholders": {
+      "width": {
+        "content": "$1"
+      },
+      "height": {
+        "content": "$2"
+      }
+    }
+  },
+  "screenshots_overlay_preview_face_label_aria_label": {
+    "message": "Zaznacz ten obszar"
+  },
+  "main_context_menu_take_screenshot_label": {
+    "message": "Wykonaj zrzut ekranu"
+  },
+  "main_context_menu_take_screenshot_accesskey": {
+    "message": "u"
+  },
+  "confirmation_hint_screenshot_copied": {
+    "message": "Skopiowano zrzut ekranu"
+  }
+}

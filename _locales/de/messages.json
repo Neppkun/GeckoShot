@@ -1,0 +1,100 @@
+{
+  "screenshot_toolbar_button_label": {
+    "message": "Bildschirmfoto"
+  },
+  "screenshot_toolbar_button_tooltiptext": {
+    "message": "Ein Bildschirmfoto aufnehmen ($SHORTCUT$)",
+    "placeholders": {
+      "shortcut": {
+        "content": "$1"
+      }
+    }
+  },
+  "screenshots_instructions": {
+    "message": "Ziehen oder klicken Sie auf der Seite, um einen Bereich auszuwählen. Drücken Sie ESC zum Abbrechen."
+  },
+  "screenshots_cancel_button": {
+    "message": "Abbrechen"
+  },
+  "screenshots_save_visible_button": {
+    "message": "Sichtbaren Bereich speichern"
+  },
+  "screenshots_save_page_button": {
+    "message": "Gesamte Seite speichern"
+  },
+  "screenshots_too_large_error_title": {
+    "message": "Ihr Bildschirmfoto wurde zugeschnitten, weil es zu groß war"
+  },
+  "screenshots_too_large_error_details": {
+    "message": "Versuchen Sie, eine Region auszuwählen, die auf ihrer längsten Seite kleiner als 32.700 Pixel ist oder eine Gesamtfläche von maximal 124.900.000 Pixel hat."
+  },
+  "screenshots_component_retry_button_aria_label": {
+    "message": "Bildschirmfoto erneut versuchen"
+  },
+  "screenshots_component_retry_button_title": {
+    "message": "Bildschirmfoto erneut versuchen"
+  },
+  "screenshots_component_cancel_button_aria_label": {
+    "message": "Abbrechen"
+  },
+  "screenshots_component_cancel_button_title": {
+    "message": "Abbrechen (Esc)"
+  },
+  "screenshots_component_copy_button_2": {
+    "message": "Kopieren"
+  },
+  "screenshots_component_copy_button_2_aria_label": {
+    "message": "Kopieren"
+  },
+  "screenshots_component_copy_button_2_title": {
+    "message": "Kopieren ($SHORTCUT$)",
+    "placeholders": {
+      "shortcut": {
+        "content": "$1"
+      }
+    }
+  },
+  "screenshots_component_download_button_2": {
+    "message": "Herunterladen"
+  },
+  "screenshots_component_download_button_2_aria_label": {
+    "message": "Herunterladen"
+  },
+  "screenshots_component_download_button_2_title": {
+    "message": "Herunterladen ($SHORTCUT$)",
+    "placeholders": {
+      "shortcut": {
+        "content": "$1"
+      }
+    }
+  },
+  "screenshots_component_download_key": {
+    "message": "S"
+  },
+  "screenshots_component_copy_key": {
+    "message": "C"
+  },
+  "screenshots_overlay_selection_region_size_3": {
+    "message": "$WIDTH$ × $HEIGHT$",
+    "placeholders": {
+      "width": {
+        "content": "$1"
+      },
+      "height": {
+        "content": "$2"
+      }
+    }
+  },
+  "screenshots_overlay_preview_face_label_aria_label": {
+    "message": "Diese Region auswählen"
+  },
+  "main_context_menu_take_screenshot_label": {
+    "message": "Bildschirmfoto aufnehmen"
+  },
+  "main_context_menu_take_screenshot_accesskey": {
+    "message": "a"
+  },
+  "confirmation_hint_screenshot_copied": {
+    "message": "Screenshot kopiert!"
+  }
+}

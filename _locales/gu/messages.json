@@ -1,0 +1,14 @@
+{
+  "screenshots_instructions": {
+    "message": "ખેંચો અથવા એક પ્રદેશ પસંદ કરવા માટે પાનાં પર ક્લિક કરો. રદ કરવા માટે ESC દબાવો."
+  },
+  "screenshots_cancel_button": {
+    "message": "રદ"
+  },
+  "screenshots_save_visible_button": {
+    "message": "દૃશ્યમાન સાચવો"
+  },
+  "screenshots_save_page_button": {
+    "message": "સંપૂર્ણ પૃષ્ઠ સાચવો"
+  }
+}

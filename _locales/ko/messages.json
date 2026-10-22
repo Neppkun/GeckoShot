@@ -1,0 +1,100 @@
+{
+  "screenshot_toolbar_button_label": {
+    "message": "스크린샷"
+  },
+  "screenshot_toolbar_button_tooltiptext": {
+    "message": "스크린샷 찍기 ($SHORTCUT$)",
+    "placeholders": {
+      "shortcut": {
+        "content": "$1"
+      }
+    }
+  },
+  "screenshots_instructions": {
+    "message": "드래그하거나 클릭해서 영역을 선택하세요. ESC 키를 누르면 취소됩니다."
+  },
+  "screenshots_cancel_button": {
+    "message": "취소"
+  },
+  "screenshots_save_visible_button": {
+    "message": "보이는 영역 선택"
+  },
+  "screenshots_save_page_button": {
+    "message": "전체 페이지 선택"
+  },
+  "screenshots_too_large_error_title": {
+    "message": "스크린샷이 너무 커서 잘렸습니다."
+  },
+  "screenshots_too_large_error_details": {
+    "message": "가장 긴 면이 32,700 픽셀보다 작거나 총 면적이 124,900,000 픽셀보다 작은 영역을 선택해 보세요."
+  },
+  "screenshots_component_retry_button_aria_label": {
+    "message": "스크린샷 다시 시도"
+  },
+  "screenshots_component_retry_button_title": {
+    "message": "스크린샷 다시 시도"
+  },
+  "screenshots_component_cancel_button_aria_label": {
+    "message": "취소"
+  },
+  "screenshots_component_cancel_button_title": {
+    "message": "취소 (Esc)"
+  },
+  "screenshots_component_copy_button_2": {
+    "message": "복사"
+  },
+  "screenshots_component_copy_button_2_aria_label": {
+    "message": "복사"
+  },
+  "screenshots_component_copy_button_2_title": {
+    "message": "복사 ($SHORTCUT$)",
+    "placeholders": {
+      "shortcut": {
+        "content": "$1"
+      }
+    }
+  },
+  "screenshots_component_download_button_2": {
+    "message": "저장"
+  },
+  "screenshots_component_download_button_2_aria_label": {
+    "message": "저장"
+  },
+  "screenshots_component_download_button_2_title": {
+    "message": "저장 ($SHORTCUT$)",
+    "placeholders": {
+      "shortcut": {
+        "content": "$1"
+      }
+    }
+  },
+  "screenshots_component_download_key": {
+    "message": "S"
+  },
+  "screenshots_component_copy_key": {
+    "message": "C"
+  },
+  "screenshots_overlay_selection_region_size_3": {
+    "message": "$WIDTH$ × $HEIGHT$",
+    "placeholders": {
+      "width": {
+        "content": "$1"
+      },
+      "height": {
+        "content": "$2"
+      }
+    }
+  },
+  "screenshots_overlay_preview_face_label_aria_label": {
+    "message": "이 영역 선택"
+  },
+  "main_context_menu_take_screenshot_label": {
+    "message": "스크린샷"
+  },
+  "main_context_menu_take_screenshot_accesskey": {
+    "message": "T"
+  },
+  "confirmation_hint_screenshot_copied": {
+    "message": "스크린샷이 복사되었습니다!"
+  }
+}

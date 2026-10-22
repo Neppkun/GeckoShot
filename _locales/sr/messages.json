@@ -1,0 +1,100 @@
+{
+  "screenshot_toolbar_button_label": {
+    "message": "Снимак екрана"
+  },
+  "screenshot_toolbar_button_tooltiptext": {
+    "message": "Направите снимак екрана ($SHORTCUT$)",
+    "placeholders": {
+      "shortcut": {
+        "content": "$1"
+      }
+    }
+  },
+  "screenshots_instructions": {
+    "message": "Изаберите област превлачењем мишем или кликом на страницу. Притисните Esc да бисте отказали."
+  },
+  "screenshots_cancel_button": {
+    "message": "Откажи"
+  },
+  "screenshots_save_visible_button": {
+    "message": "Сачувај видљиву област"
+  },
+  "screenshots_save_page_button": {
+    "message": "Сачувај целу страницу"
+  },
+  "screenshots_too_large_error_title": {
+    "message": "Снимак екрана је исечен јер је превелик"
+  },
+  "screenshots_too_large_error_details": {
+    "message": "Покушајте да изаберете област мању од 32,700 пиксела дуж најдуже стране или 124,900,000 пиксела укупне површине."
+  },
+  "screenshots_component_retry_button_aria_label": {
+    "message": "Понови снимак"
+  },
+  "screenshots_component_retry_button_title": {
+    "message": "Понови снимак"
+  },
+  "screenshots_component_cancel_button_aria_label": {
+    "message": "Откажи"
+  },
+  "screenshots_component_cancel_button_title": {
+    "message": "Откажи (Esc)"
+  },
+  "screenshots_component_copy_button_2": {
+    "message": "Копирај"
+  },
+  "screenshots_component_copy_button_2_aria_label": {
+    "message": "Копирај"
+  },
+  "screenshots_component_copy_button_2_title": {
+    "message": "Копирај ($SHORTCUT$)",
+    "placeholders": {
+      "shortcut": {
+        "content": "$1"
+      }
+    }
+  },
+  "screenshots_component_download_button_2": {
+    "message": "Преузми"
+  },
+  "screenshots_component_download_button_2_aria_label": {
+    "message": "Преузми"
+  },
+  "screenshots_component_download_button_2_title": {
+    "message": "Преузми ($SHORTCUT$)",
+    "placeholders": {
+      "shortcut": {
+        "content": "$1"
+      }
+    }
+  },
+  "screenshots_component_download_key": {
+    "message": "S"
+  },
+  "screenshots_component_copy_key": {
+    "message": "C"
+  },
+  "screenshots_overlay_selection_region_size_3": {
+    "message": "$WIDTH$ × $HEIGHT$",
+    "placeholders": {
+      "width": {
+        "content": "$1"
+      },
+      "height": {
+        "content": "$2"
+      }
+    }
+  },
+  "screenshots_overlay_preview_face_label_aria_label": {
+    "message": "Изаберите ову област"
+  },
+  "main_context_menu_take_screenshot_label": {
+    "message": "Направи снимак екрана"
+  },
+  "main_context_menu_take_screenshot_accesskey": {
+    "message": "Н"
+  },
+  "confirmation_hint_screenshot_copied": {
+    "message": "Снимак екрана је копиран!"
+  }
+}

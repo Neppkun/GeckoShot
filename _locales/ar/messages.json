@@ -1,0 +1,100 @@
+{
+  "screenshot_toolbar_button_label": {
+    "message": "لقطة شاشة"
+  },
+  "screenshot_toolbar_button_tooltiptext": {
+    "message": "التقط لقطة شاشة ($SHORTCUT$)",
+    "placeholders": {
+      "shortcut": {
+        "content": "$1"
+      }
+    }
+  },
+  "screenshots_instructions": {
+    "message": "اسحب أو انقر في الصفحة لاختيار منطقة. اضغط ESC للإلغاء."
+  },
+  "screenshots_cancel_button": {
+    "message": "ألغِ"
+  },
+  "screenshots_save_visible_button": {
+    "message": "احفظ الجزء المرئي"
+  },
+  "screenshots_save_page_button": {
+    "message": "احفظ كل الصفحة"
+  },
+  "screenshots_too_large_error_title": {
+    "message": "لقد اقتُصّت لقطة شاشتك لأنها كانت كبيرة جدًا"
+  },
+  "screenshots_too_large_error_details": {
+    "message": "حاول تحديد منطقة أصغر من 32,700 بكسل على أطول جانب لها أو 124,900,000 بكسل بمساحة إجمالية."
+  },
+  "screenshots_component_retry_button_aria_label": {
+    "message": "أعد محاولة التقاط لقطة الشاشة"
+  },
+  "screenshots_component_retry_button_title": {
+    "message": "أعد محاولة التقاط لقطة الشاشة"
+  },
+  "screenshots_component_cancel_button_aria_label": {
+    "message": "ألغِ"
+  },
+  "screenshots_component_cancel_button_title": {
+    "message": "ألغِ (Esc)"
+  },
+  "screenshots_component_copy_button_2": {
+    "message": "انسخ"
+  },
+  "screenshots_component_copy_button_2_aria_label": {
+    "message": "انسخ"
+  },
+  "screenshots_component_copy_button_2_title": {
+    "message": "انسخ ($SHORTCUT$)",
+    "placeholders": {
+      "shortcut": {
+        "content": "$1"
+      }
+    }
+  },
+  "screenshots_component_download_button_2": {
+    "message": "نزّل"
+  },
+  "screenshots_component_download_button_2_aria_label": {
+    "message": "نزّل"
+  },
+  "screenshots_component_download_button_2_title": {
+    "message": "نزّل ($SHORTCUT$)",
+    "placeholders": {
+      "shortcut": {
+        "content": "$1"
+      }
+    }
+  },
+  "screenshots_component_download_key": {
+    "message": "S"
+  },
+  "screenshots_component_copy_key": {
+    "message": "C"
+  },
+  "screenshots_overlay_selection_region_size_3": {
+    "message": "$WIDTH$ × $HEIGHT$",
+    "placeholders": {
+      "width": {
+        "content": "$1"
+      },
+      "height": {
+        "content": "$2"
+      }
+    }
+  },
+  "screenshots_overlay_preview_face_label_aria_label": {
+    "message": "حدّد هذه المنطقة"
+  },
+  "main_context_menu_take_screenshot_label": {
+    "message": "خُذ لقطة شاشة"
+  },
+  "main_context_menu_take_screenshot_accesskey": {
+    "message": "خ"
+  },
+  "confirmation_hint_screenshot_copied": {
+    "message": "نُسخت لقطة الشاشة!"
+  }
+}

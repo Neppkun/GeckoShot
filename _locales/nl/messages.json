@@ -1,0 +1,100 @@
+{
+  "screenshot_toolbar_button_label": {
+    "message": "Schermafbeelding"
+  },
+  "screenshot_toolbar_button_tooltiptext": {
+    "message": "Een schermafbeelding maken ($SHORTCUT$)",
+    "placeholders": {
+      "shortcut": {
+        "content": "$1"
+      }
+    }
+  },
+  "screenshots_instructions": {
+    "message": "Sleep of klik op de pagina om een gebied te selecteren. Druk op ESC om te annuleren."
+  },
+  "screenshots_cancel_button": {
+    "message": "Annuleren"
+  },
+  "screenshots_save_visible_button": {
+    "message": "Zichtbaar gebied opslaan"
+  },
+  "screenshots_save_page_button": {
+    "message": "Volledige pagina opslaan"
+  },
+  "screenshots_too_large_error_title": {
+    "message": "Uw schermafbeelding is bijgesneden omdat deze te groot was"
+  },
+  "screenshots_too_large_error_details": {
+    "message": "Probeer een gebied te selecteren dat kleiner is dan 32.700 pixels aan de langste zijde of een totale oppervlakte van 124.900.000 pixels."
+  },
+  "screenshots_component_retry_button_aria_label": {
+    "message": "Schermafbelding opnieuw proberen"
+  },
+  "screenshots_component_retry_button_title": {
+    "message": "Schermafbeelding opnieuw proberen"
+  },
+  "screenshots_component_cancel_button_aria_label": {
+    "message": "Annuleren"
+  },
+  "screenshots_component_cancel_button_title": {
+    "message": "Annuleren (Esc)"
+  },
+  "screenshots_component_copy_button_2": {
+    "message": "Kopiëren"
+  },
+  "screenshots_component_copy_button_2_aria_label": {
+    "message": "Kopiëren"
+  },
+  "screenshots_component_copy_button_2_title": {
+    "message": "Kopiëren ($SHORTCUT$)",
+    "placeholders": {
+      "shortcut": {
+        "content": "$1"
+      }
+    }
+  },
+  "screenshots_component_download_button_2": {
+    "message": "Downloaden"
+  },
+  "screenshots_component_download_button_2_aria_label": {
+    "message": "Downloaden"
+  },
+  "screenshots_component_download_button_2_title": {
+    "message": "Downloaden ($SHORTCUT$)",
+    "placeholders": {
+      "shortcut": {
+        "content": "$1"
+      }
+    }
+  },
+  "screenshots_component_download_key": {
+    "message": "S"
+  },
+  "screenshots_component_copy_key": {
+    "message": "C"
+  },
+  "screenshots_overlay_selection_region_size_3": {
+    "message": "$WIDTH$ × $HEIGHT$",
+    "placeholders": {
+      "width": {
+        "content": "$1"
+      },
+      "height": {
+        "content": "$2"
+      }
+    }
+  },
+  "screenshots_overlay_preview_face_label_aria_label": {
+    "message": "Deze regio selecteren"
+  },
+  "main_context_menu_take_screenshot_label": {
+    "message": "Schermafbeelding maken"
+  },
+  "main_context_menu_take_screenshot_accesskey": {
+    "message": "h"
+  },
+  "confirmation_hint_screenshot_copied": {
+    "message": "Schermafbeelding gekopieerd!"
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "screenshot_toolbar_button_label": {
+    "message": "Cattura schermata"
+  },
+  "screenshot_toolbar_button_tooltiptext": {
+    "message": "Cattura schermata ($SHORTCUT$)",
+    "placeholders": {
+      "shortcut": {
+        "content": "$1"
+      }
+    }
+  },
+  "screenshots_instructions": {
+    "message": "Trascina o fai clic su una pagina per selezionare un’area della pagina. Premi ESC per annullare."
+  },
+  "screenshots_cancel_button": {
+    "message": "Annulla"
+  },
+  "screenshots_save_visible_button": {
+    "message": "Salva l’area visibile"
+  },
+  "screenshots_save_page_button": {
+    "message": "Salva l’intera schermata"
+  },
+  "screenshots_too_large_error_title": {
+    "message": "Lo screenshot è stato ritagliato in quanto troppo grande"
+  },
+  "screenshots_too_large_error_details": {
+    "message": "Selezionare un’area inferiore a 32.700 pixel nel lato più lungo, o con una superficie complessiva inferiore a 124.900.000 pixel."
+  },
+  "screenshots_component_retry_button_aria_label": {
+    "message": "Riprova cattura"
+  },
+  "screenshots_component_retry_button_title": {
+    "message": "Riprova cattura"
+  },
+  "screenshots_component_cancel_button_aria_label": {
+    "message": "Annulla"
+  },
+  "screenshots_component_cancel_button_title": {
+    "message": "Annulla (Esc)"
+  },
+  "screenshots_component_copy_button_2": {
+    "message": "Copia"
+  },
+  "screenshots_component_copy_button_2_aria_label": {
+    "message": "Copia"
+  },
+  "screenshots_component_copy_button_2_title": {
+    "message": "Copia ($SHORTCUT$)",
+    "placeholders": {
+      "shortcut": {
+        "content": "$1"
+      }
+    }
+  },
+  "screenshots_component_download_button_2": {
+    "message": "Scarica"
+  },
+  "screenshots_component_download_button_2_aria_label": {
+    "message": "Scarica"
+  },
+  "screenshots_component_download_button_2_title": {
+    "message": "Scarica ($SHORTCUT$)",
+    "placeholders": {
+      "shortcut": {
+        "content": "$1"
+      }
+    }
+  },
+  "screenshots_component_download_key": {
+    "message": "S"
+  },
+  "screenshots_component_copy_key": {
+    "message": "C"
+  },
+  "screenshots_overlay_selection_region_size_3": {
+    "message": "$WIDTH$ × $HEIGHT$",
+    "placeholders": {
+      "width": {
+        "content": "$1"
+      },
+      "height": {
+        "content": "$2"
+      }
+    }
+  },
+  "screenshots_overlay_preview_face_label_aria_label": {
+    "message": "Seleziona questa regione"
+  },
+  "main_context_menu_take_screenshot_label": {
+    "message": "Cattura schermata"
+  },
+  "main_context_menu_take_screenshot_accesskey": {
+    "message": "e"
+  },
+  "confirmation_hint_screenshot_copied": {
+    "message": "Schermata copiata."
+  }
+}

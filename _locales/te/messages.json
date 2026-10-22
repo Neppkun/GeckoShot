@@ -1,0 +1,34 @@
+{
+  "screenshots_instructions": {
+    "message": "ఒక ప్రాంతాన్ని ఎంచుకోవడానికి పేజీని లాగండి లేదా నొక్కండి. రద్దు చేయడానికి ESC నొక్కండి."
+  },
+  "screenshots_cancel_button": {
+    "message": "రద్దుచేయి"
+  },
+  "screenshots_save_visible_button": {
+    "message": "కనిపించే దానిని బద్రపరచండి"
+  },
+  "screenshots_save_page_button": {
+    "message": "పూర్తి పేజీని భద్రపరచు"
+  },
+  "screenshots_overlay_selection_region_size_3": {
+    "message": "$WIDTH$ × $HEIGHT$",
+    "placeholders": {
+      "width": {
+        "content": "$1"
+      },
+      "height": {
+        "content": "$2"
+      }
+    }
+  },
+  "main_context_menu_take_screenshot_label": {
+    "message": "తెరపట్టు తీయి"
+  },
+  "main_context_menu_take_screenshot_accesskey": {
+    "message": "T"
+  },
+  "confirmation_hint_screenshot_copied": {
+    "message": "తెరపట్టు కాపీ అయ్యింది!"
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "screenshot_toolbar_button_label": {
+    "message": "Екранна снимка"
+  },
+  "screenshot_toolbar_button_tooltiptext": {
+    "message": "Направете снимка на екрана ($SHORTCUT$)",
+    "placeholders": {
+      "shortcut": {
+        "content": "$1"
+      }
+    }
+  },
+  "screenshots_instructions": {
+    "message": "За да изберете участък влачете или щракнете с мишката в страницата. Натиснете ESC за отказ."
+  },
+  "screenshots_cancel_button": {
+    "message": "Отказ"
+  },
+  "screenshots_save_visible_button": {
+    "message": "Запазване на видимата област"
+  },
+  "screenshots_save_page_button": {
+    "message": "Запазване на цялата страница"
+  },
+  "screenshots_too_large_error_title": {
+    "message": "Екранната ви снимка беше отрязана, защото е твърде голяма"
+  },
+  "screenshots_component_retry_button_aria_label": {
+    "message": "Нов опит за снимка на екрана"
+  },
+  "screenshots_component_retry_button_title": {
+    "message": "Нов опит за снимка на екрана"
+  },
+  "screenshots_component_copy_button_2": {
+    "message": "Копиране"
+  },
+  "screenshots_component_copy_button_2_aria_label": {
+    "message": "Копиране"
+  },
+  "screenshots_component_copy_button_2_title": {
+    "message": "Копиране ($SHORTCUT$)",
+    "placeholders": {
+      "shortcut": {
+        "content": "$1"
+      }
+    }
+  },
+  "screenshots_component_download_button_2": {
+    "message": "Изтегляне"
+  },
+  "screenshots_component_download_button_2_aria_label": {
+    "message": "Изтегляне"
+  },
+  "screenshots_component_download_button_2_title": {
+    "message": "Изтегляне ($SHORTCUT$)",
+    "placeholders": {
+      "shortcut": {
+        "content": "$1"
+      }
+    }
+  },
+  "screenshots_overlay_selection_region_size_3": {
+    "message": "$WIDTH$ × $HEIGHT$",
+    "placeholders": {
+      "width": {
+        "content": "$1"
+      },
+      "height": {
+        "content": "$2"
+      }
+    }
+  },
+  "screenshots_overlay_preview_face_label_aria_label": {
+    "message": "Изберете тази област"
+  },
+  "main_context_menu_take_screenshot_label": {
+    "message": "Снимка на екрана"
+  },
+  "main_context_menu_take_screenshot_accesskey": {
+    "message": "е"
+  },
+  "confirmation_hint_screenshot_copied": {
+    "message": "Екранната снимка е копирана!"
+  }
+}

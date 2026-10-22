@@ -1,0 +1,100 @@
+{
+  "screenshot_toolbar_button_label": {
+    "message": "Ekran görüntüsü"
+  },
+  "screenshot_toolbar_button_tooltiptext": {
+    "message": "Ekran görüntüsü al ($SHORTCUT$)",
+    "placeholders": {
+      "shortcut": {
+        "content": "$1"
+      }
+    }
+  },
+  "screenshots_instructions": {
+    "message": "Bir bölgeyi seçmek için işaretçiyi sürükleyin veya tıklayın. İptal etmek için ESC tuşuna basın."
+  },
+  "screenshots_cancel_button": {
+    "message": "Vazgeç"
+  },
+  "screenshots_save_visible_button": {
+    "message": "Görünür alanı kaydet"
+  },
+  "screenshots_save_page_button": {
+    "message": "Tüm sayfayı kaydet"
+  },
+  "screenshots_too_large_error_title": {
+    "message": "Ekran görüntünüz çok büyük olduğu için kırpıldı"
+  },
+  "screenshots_too_large_error_details": {
+    "message": "En uzun kenarı 32.700 pikselden veya toplam alanı 124.900.000 pikselden küçük olan bir bölge seçmeyi deneyin."
+  },
+  "screenshots_component_retry_button_aria_label": {
+    "message": "Ekran görüntüsünü yeniden dene"
+  },
+  "screenshots_component_retry_button_title": {
+    "message": "Ekran görüntüsünü yeniden dene"
+  },
+  "screenshots_component_cancel_button_aria_label": {
+    "message": "Vazgeç"
+  },
+  "screenshots_component_cancel_button_title": {
+    "message": "Vazgeç (Esc)"
+  },
+  "screenshots_component_copy_button_2": {
+    "message": "Kopyala"
+  },
+  "screenshots_component_copy_button_2_aria_label": {
+    "message": "Kopyala"
+  },
+  "screenshots_component_copy_button_2_title": {
+    "message": "Kopyala ($SHORTCUT$)",
+    "placeholders": {
+      "shortcut": {
+        "content": "$1"
+      }
+    }
+  },
+  "screenshots_component_download_button_2": {
+    "message": "İndir"
+  },
+  "screenshots_component_download_button_2_aria_label": {
+    "message": "İndir"
+  },
+  "screenshots_component_download_button_2_title": {
+    "message": "İndir ($SHORTCUT$)",
+    "placeholders": {
+      "shortcut": {
+        "content": "$1"
+      }
+    }
+  },
+  "screenshots_component_download_key": {
+    "message": "S"
+  },
+  "screenshots_component_copy_key": {
+    "message": "C"
+  },
+  "screenshots_overlay_selection_region_size_3": {
+    "message": "$WIDTH$ × $HEIGHT$",
+    "placeholders": {
+      "width": {
+        "content": "$1"
+      },
+      "height": {
+        "content": "$2"
+      }
+    }
+  },
+  "screenshots_overlay_preview_face_label_aria_label": {
+    "message": "Bu bölgeyi seç"
+  },
+  "main_context_menu_take_screenshot_label": {
+    "message": "Ekran görüntüsü al"
+  },
+  "main_context_menu_take_screenshot_accesskey": {
+    "message": "E"
+  },
+  "confirmation_hint_screenshot_copied": {
+    "message": "Ekran görüntüsü kopyalandı!"
+  }
+}

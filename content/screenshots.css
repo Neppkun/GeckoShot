@@ -1,0 +1,504 @@
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+
+/* Styles for every piece of the screenshots UI (overlay, buttons panel,
+ * preview dialog, "copied" hint); each shadow root links this one sheet.
+ *
+ * Layout comes from Firefox's overlay.css, screenshots-buttons.css and
+ * screenshots-preview.css. The look follows Helium's UI patches
+ * (github.com/imputnet/helium, patches/helium/ui): the grayscale palette and
+ * Helium blue (helium-color-scheme.patch), compact 4px/6px spacing
+ * (find-bar.patch), 12px bubbles / 8px items / 6px chips
+ * (exclusive-access-bubble.patch, app-menu-style.patch), the opaque #303030
+ * fullscreen notification, and no ink ripples. */
+
+:host {
+  --h-font: 13px/18px system-ui, sans-serif;
+  --h-surface: light-dark(#ffffff, #292a2a);
+  --h-text: light-dark(#1a1c1c, #e3e2e2);
+  --h-border: light-dark(#e3e2e2, rgb(255 255 255 / 0.1));
+  --h-hover: color-mix(in srgb, currentColor 8%, transparent);
+  --h-active: color-mix(in srgb, currentColor 14%, transparent);
+  --h-primary: light-dark(#3450d1, #90b1ff);
+  --h-on-primary: light-dark(#ffffff, #121a86);
+  --h-primary-hover: color-mix(in srgb, var(--h-primary) 88%, light-dark(black, white));
+  --h-toast: #303030;
+  --h-on-toast: #ffffff;
+  --h-scrim: rgb(0 0 0 / 0.4);
+  --h-shadow: 0 2px 8px rgb(0 0 0 / 0.16);
+
+  /* These z-indexes are used to correctly layer elements in the screenshots overlay */
+  --screenshots-lowest-layer: 1;
+  --screenshots-low-layer: 2;
+  --screenshots-high-layer: 3;
+  --screenshots-highest-layer: 4;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+:focus-visible {
+  outline: 2px solid var(--h-primary);
+}
+
+/* Buttons: compact and flat (Helium has no ripples or pills). */
+
+button {
+  appearance: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  min-width: 28px;
+  min-height: 28px;
+  margin: 0;
+  padding: 0 10px;
+  border: none;
+  border-radius: 8px;
+  background-color: transparent;
+  color: inherit;
+  font: inherit;
+  font-weight: 500;
+  white-space: nowrap;
+  cursor: pointer;
+  user-select: none;
+
+  &:enabled:hover {
+    background-color: var(--h-hover);
+  }
+  &:enabled:hover:active {
+    background-color: var(--h-active);
+  }
+  &:disabled {
+    opacity: 0.5;
+    cursor: default;
+  }
+  /* Inset ring, so it fits inside the compact bars. */
+  &:focus-visible {
+    outline-offset: -2px;
+  }
+
+  &.primary,
+  &.primary:enabled:hover:active {
+    background-color: var(--h-primary);
+    color: var(--h-on-primary);
+  }
+  &.primary:enabled:hover {
+    background-color: var(--h-primary-hover);
+  }
+  &.primary:focus-visible {
+    outline-color: var(--h-on-primary);
+    outline-offset: -4px;
+  }
+
+  &.icon-only {
+    padding: 0;
+  }
+
+  > label {
+    pointer-events: none;
+  }
+}
+
+/* 16px icons: Firefox's SVGs used as masks over currentColor. */
+.icon {
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  background-color: currentColor;
+  mask-position: center;
+  mask-size: 16px;
+  mask-repeat: no-repeat;
+  pointer-events: none;
+}
+
+#cancel > .icon {
+  mask-image: url("icons/close.svg");
+}
+#copy > .icon {
+  mask-image: url("icons/edit-copy.svg");
+}
+#download > .icon {
+  mask-image: url("icons/downloads.svg");
+}
+#retry > .icon {
+  mask-image: url("icons/reload.svg");
+}
+
+/* A bar of buttons on a raised surface (panel, selection actions). */
+.bar {
+  display: flex;
+  gap: 4px;
+  padding: 4px;
+  border: 1px solid var(--h-border);
+  border-radius: 12px;
+  background-color: var(--h-surface);
+  color: var(--h-text);
+  box-shadow: var(--h-shadow);
+  font: var(--h-font);
+}
+
+/* Overlay */
+
+#screenshots-component {
+  position: absolute;
+  inset: 0;
+  font: var(--h-font);
+  user-select: none;
+  touch-action: none;
+  pointer-events: auto;
+  cursor: crosshair;
+
+  &[resizing] {
+    position: fixed;
+    width: 100% !important;
+    height: 100% !important;
+  }
+}
+
+/* Crosshairs state: the instructions and Cancel in one small bubble, like
+ * Helium's fullscreen notification. */
+#preview-container {
+  overflow: clip;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  inset-inline: 0;
+  box-sizing: border-box;
+  width: 100vw;
+  height: 100vh;
+  padding-top: 16px;
+  background-color: var(--h-scrim);
+}
+
+.preview-bubble {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  max-width: calc(100% - 32px);
+  padding: 6px 6px 6px 8px;
+  border-radius: 12px;
+  background-color: var(--h-toast);
+  color: var(--h-on-toast);
+  /* --bubble-offset is set by dodgePreviewBubble() while the pointer is near
+   * the bubble's spot. */
+  translate: 0 var(--bubble-offset, 0px);
+  transition: translate 150ms ease-out;
+
+  @media (prefers-reduced-motion: reduce) {
+    transition: none;
+  }
+}
+
+.preview-instructions {
+  padding-inline-start: 4px;
+  border-radius: 6px;
+
+  &:focus-visible {
+    outline-offset: 2px;
+  }
+}
+
+#screenshots-cancel-button {
+  background-color: rgb(255 255 255 / 0.12);
+
+  &:enabled:hover {
+    background-color: rgb(255 255 255 / 0.2);
+  }
+}
+
+#hover-highlight {
+  position: absolute;
+  z-index: var(--screenshots-high-layer);
+  box-sizing: border-box;
+  border: 1px solid rgb(255 255 255 / 0.7);
+  border-radius: 4px;
+  background-color: rgb(255 255 255 / 0.12);
+  pointer-events: none;
+}
+
+/* Selection */
+
+#selection-container {
+  overflow: clip;
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.bghighlight {
+  position: absolute;
+  z-index: -1;
+  overflow: clip;
+  background-color: var(--h-scrim);
+  pointer-events: none;
+}
+
+#top-background {
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+#left-background {
+  left: 0;
+}
+
+#bottom-background {
+  left: 0;
+  width: 100%;
+}
+
+.highlight {
+  position: absolute;
+  z-index: var(--screenshots-lowest-layer);
+  box-sizing: border-box;
+  border: 1px solid #fff;
+  box-shadow: 0 0 0 1px rgb(0 0 0 / 0.2);
+  outline-offset: 4px;
+  cursor: move;
+  pointer-events: auto;
+}
+
+#selection-size-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  z-index: var(--screenshots-lowest-layer);
+  pointer-events: none;
+}
+
+#selection-size {
+  padding: 2px 6px;
+  border-radius: 6px;
+  background-color: var(--h-toast);
+  color: var(--h-on-toast);
+  font-size: 12px;
+  font-variant-numeric: tabular-nums;
+}
+
+.mover-target {
+  position: absolute;
+  z-index: var(--screenshots-high-layer);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline-offset: -15px;
+  pointer-events: auto;
+
+  &:hover .mover {
+    transform: scale(1.2);
+  }
+}
+
+.direction-topLeft,
+.direction-topRight,
+.direction-bottomLeft,
+.direction-bottomRight {
+  width: 60px;
+  height: 60px;
+}
+
+.direction-top,
+.direction-bottom {
+  inset-inline-start: 0;
+  width: 100%;
+  height: 60px;
+  z-index: var(--screenshots-low-layer);
+}
+
+.direction-left,
+.direction-right {
+  top: 0;
+  width: 60px;
+  height: 100%;
+  z-index: var(--screenshots-low-layer);
+}
+
+.direction-topLeft,
+.direction-topRight,
+.direction-top {
+  top: -30px;
+}
+.direction-bottomLeft,
+.direction-bottomRight,
+.direction-bottom {
+  bottom: -30px;
+}
+.direction-topLeft,
+.direction-bottomLeft,
+.direction-left {
+  left: -30px;
+}
+.direction-topRight,
+.direction-bottomRight,
+.direction-right {
+  right: -30px;
+}
+
+.direction-topLeft,
+.direction-bottomRight {
+  cursor: nwse-resize;
+}
+.direction-topRight,
+.direction-bottomLeft {
+  cursor: nesw-resize;
+}
+.direction-top,
+.direction-bottom {
+  cursor: ns-resize;
+}
+.direction-left,
+.direction-right {
+  cursor: ew-resize;
+}
+
+.mover {
+  position: relative;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow:
+    0 0 0 1px rgb(0 0 0 / 0.25),
+    0 1px 3px rgb(0 0 0 / 0.3);
+  transition: transform 125ms cubic-bezier(0.07, 0.95, 0, 1);
+  pointer-events: none;
+
+  @media (forced-colors) {
+    background-color: ButtonText;
+  }
+}
+
+#buttons-container {
+  position: absolute;
+  z-index: var(--screenshots-highest-layer);
+  margin: 8px 0;
+  cursor: auto;
+}
+
+/* Buttons panel (Save visible / Save full page), pinned where Firefox puts
+ * it: the top-right corner of the content area. */
+
+.screenshotsPagePanel {
+  position: fixed;
+  top: 8px;
+  inset-inline-end: 8px;
+  z-index: var(--screenshots-highest-layer);
+}
+
+/* menu-visible.svg / menu-fullpage.svg, inlined (see screenshots-buttons.js). */
+.screenshot-button-icon {
+  width: 18px;
+  height: 18px;
+  pointer-events: none;
+
+  .icon-fill {
+    fill: currentColor;
+  }
+  .icon-stroke {
+    fill: color-mix(in srgb, currentColor 20%, transparent);
+  }
+}
+
+/* Preview dialog (Firefox's tab-modal dialog), sized to the screenshot. */
+
+.dialogBox {
+  box-sizing: border-box;
+  flex-direction: column;
+  width: 100%;
+  max-width: clamp(80%, 100% + (600px - 100%) / 2, 100%);
+  max-height: clamp(90%, 100% + (600px - 100%) / 2, 100%);
+  /* Top-aligned, as #window-modal-dialog in Firefox. */
+  margin: 8px auto auto;
+  bottom: auto;
+  padding: 0;
+  border: 1px solid var(--h-border);
+  border-radius: 12px;
+  background-color: var(--h-surface);
+  color: var(--h-text);
+  box-shadow: var(--h-shadow);
+  font: var(--h-font);
+
+  &[open] {
+    display: flex;
+  }
+  &:focus-visible {
+    outline: none;
+  }
+  &::backdrop {
+    background-color: var(--h-scrim);
+  }
+}
+
+.image-view {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  min-height: 0;
+}
+
+.preview-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 4px;
+  padding: 6px;
+}
+
+#preview-image-container {
+  flex: 1;
+  min-height: 0;
+  overflow: auto;
+  padding: 0 12px 12px;
+}
+
+#preview-image {
+  display: block;
+  width: 100%;
+  border-radius: 8px;
+  outline: 1px solid var(--h-border);
+}
+
+/* "Screenshot copied!" (Firefox's ConfirmationHint), styled like Helium's
+ * fullscreen notification. */
+
+#confirmation-hint {
+  position: fixed;
+  top: 8px;
+  inset-inline-end: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  border-radius: 12px;
+  background-color: var(--h-toast);
+  color: var(--h-on-toast);
+  font: var(--h-font);
+}
+
+/* success-animation.svg is a 19-frame sprite. */
+#confirmation-hint-checkmark-image {
+  width: 16px;
+  height: 16px;
+  background-color: currentColor;
+  mask: url("icons/success-animation.svg") -288px 0 / 304px 16px no-repeat;
+
+  @media (prefers-reduced-motion: no-preference) {
+    animation: confirmation-hint-checkmark 300ms steps(18) 60ms backwards;
+  }
+}
+
+@keyframes confirmation-hint-checkmark {
+  from {
+    mask-position: 0 0;
+  }
+  to {
+    mask-position: -288px 0;
+  }
+}

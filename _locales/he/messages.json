@@ -1,0 +1,100 @@
+{
+  "screenshot_toolbar_button_label": {
+    "message": "צילום מסך"
+  },
+  "screenshot_toolbar_button_tooltiptext": {
+    "message": "צילום מסך ($SHORTCUT$)",
+    "placeholders": {
+      "shortcut": {
+        "content": "$1"
+      }
+    }
+  },
+  "screenshots_instructions": {
+    "message": "נא לגרור או ללחוץ על הדף כדי לבחור תחום או על ESC לביטול."
+  },
+  "screenshots_cancel_button": {
+    "message": "ביטול"
+  },
+  "screenshots_save_visible_button": {
+    "message": "שמירת התחום המוצג"
+  },
+  "screenshots_save_page_button": {
+    "message": "שמירת הדף במלואו"
+  },
+  "screenshots_too_large_error_title": {
+    "message": "צילום המסך שלך נחתך מכיוון שהיה גדול מדי"
+  },
+  "screenshots_too_large_error_details": {
+    "message": "כדאי לנסות לבחור באזור הקטן מ־32,700 פיקסלים בצד הארוך ביותר שלו או בשטח כולל של 124,900,000 פיקסלים."
+  },
+  "screenshots_component_retry_button_aria_label": {
+    "message": "ניסיון חוזר לצילום מסך"
+  },
+  "screenshots_component_retry_button_title": {
+    "message": "ניסיון חוזר לצילום מסך"
+  },
+  "screenshots_component_cancel_button_aria_label": {
+    "message": "ביטול"
+  },
+  "screenshots_component_cancel_button_title": {
+    "message": "ביטול (Esc)"
+  },
+  "screenshots_component_copy_button_2": {
+    "message": "העתקה"
+  },
+  "screenshots_component_copy_button_2_aria_label": {
+    "message": "העתקה"
+  },
+  "screenshots_component_copy_button_2_title": {
+    "message": "העתקה ($SHORTCUT$)",
+    "placeholders": {
+      "shortcut": {
+        "content": "$1"
+      }
+    }
+  },
+  "screenshots_component_download_button_2": {
+    "message": "הורדה"
+  },
+  "screenshots_component_download_button_2_aria_label": {
+    "message": "הורדה"
+  },
+  "screenshots_component_download_button_2_title": {
+    "message": "הורדה ($SHORTCUT$)",
+    "placeholders": {
+      "shortcut": {
+        "content": "$1"
+      }
+    }
+  },
+  "screenshots_component_download_key": {
+    "message": "S"
+  },
+  "screenshots_component_copy_key": {
+    "message": "C"
+  },
+  "screenshots_overlay_selection_region_size_3": {
+    "message": "$WIDTH$ × $HEIGHT$",
+    "placeholders": {
+      "width": {
+        "content": "$1"
+      },
+      "height": {
+        "content": "$2"
+      }
+    }
+  },
+  "screenshots_overlay_preview_face_label_aria_label": {
+    "message": "בחירת אזור זה"
+  },
+  "main_context_menu_take_screenshot_label": {
+    "message": "צילום מסך"
+  },
+  "main_context_menu_take_screenshot_accesskey": {
+    "message": "צ"
+  },
+  "confirmation_hint_screenshot_copied": {
+    "message": "צילום המסך הועתק!"
+  }
+}

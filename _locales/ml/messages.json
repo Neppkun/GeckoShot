@@ -1,0 +1,89 @@
+{
+  "screenshots_instructions": {
+    "message": "ഒരു പ്രദേശം തിരഞ്ഞെടുക്കാൻ താളില്‍ വലിക്കുക അല്ലെങ്കിൽ അമൎത്തുക. റദ്ദാക്കാൻ ESC അമർത്തുക."
+  },
+  "screenshots_cancel_button": {
+    "message": "റദ്ദാക്കുക"
+  },
+  "screenshots_save_visible_button": {
+    "message": "കാണുന്നതു സംരക്ഷിക്കുക"
+  },
+  "screenshots_save_page_button": {
+    "message": "താള്‍ മുഴുവന്‍ സംരക്ഷിക്കുക"
+  },
+  "screenshots_too_large_error_title": {
+    "message": "താങ്ങളുടെ പ്രതലപ്പിളൎപ്പു് ഒരുപാടു് വലുതായതുകൊണ്ടു അതിനെ വെട്ടണ്ടിവന്നു"
+  },
+  "screenshots_too_large_error_details": {
+    "message": "ഏറ്റവും നീളമുള്ള വശത്തു് 32,700 ചിത്രമാത്രയേക്കാൾ ചെറുതോ 124,900,000 ചിത്രമാത്ര പരപ്പളവോ തിരഞ്ഞെടുക്കാൻ ശ്രമിക്കുക."
+  },
+  "screenshots_component_retry_button_aria_label": {
+    "message": "പ്രതലപ്പിളൎപ്പു് എടുക്കാൻ വീണ്ടും ശ്രമിക്കുക"
+  },
+  "screenshots_component_retry_button_title": {
+    "message": "പ്രതലപ്പിളൎപ്പു് എടുക്കാൻ വീണ്ടും ശ്രമിക്കുക"
+  },
+  "screenshots_component_cancel_button_aria_label": {
+    "message": "റദ്ദാക്കുക (Esc)"
+  },
+  "screenshots_component_cancel_button_title": {
+    "message": "റദ്ദാക്കുക (Esc)"
+  },
+  "screenshots_component_copy_button_2": {
+    "message": "പകര്‍ത്തുക"
+  },
+  "screenshots_component_copy_button_2_aria_label": {
+    "message": "പകര്‍ത്തുക"
+  },
+  "screenshots_component_copy_button_2_title": {
+    "message": "പകര്‍ത്തുക ($SHORTCUT$)",
+    "placeholders": {
+      "shortcut": {
+        "content": "$1"
+      }
+    }
+  },
+  "screenshots_component_download_button_2": {
+    "message": "ഇറക്കിവയ്ക്കുക"
+  },
+  "screenshots_component_download_button_2_aria_label": {
+    "message": "ഇറക്കിവയ്ക്കുക"
+  },
+  "screenshots_component_download_button_2_title": {
+    "message": "ഇറക്കിവയ്ക്കുക ($SHORTCUT$)",
+    "placeholders": {
+      "shortcut": {
+        "content": "$1"
+      }
+    }
+  },
+  "screenshots_component_download_key": {
+    "message": "S"
+  },
+  "screenshots_component_copy_key": {
+    "message": "C"
+  },
+  "screenshots_overlay_selection_region_size_3": {
+    "message": "$WIDTH$ × $HEIGHT$",
+    "placeholders": {
+      "width": {
+        "content": "$1"
+      },
+      "height": {
+        "content": "$2"
+      }
+    }
+  },
+  "screenshots_overlay_preview_face_label_aria_label": {
+    "message": "ഈ പരപ്പളവു് തിരഞ്ഞെടുക്കുക"
+  },
+  "main_context_menu_take_screenshot_label": {
+    "message": "പ്രതലപ്പിളർപ്പു് എടുക്കുക"
+  },
+  "main_context_menu_take_screenshot_accesskey": {
+    "message": "പ"
+  },
+  "confirmation_hint_screenshot_copied": {
+    "message": "പ്രതലപ്പിളർപ്പു് പകർത്തി"
+  }
+}

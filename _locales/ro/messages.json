@@ -1,0 +1,100 @@
+{
+  "screenshot_toolbar_button_label": {
+    "message": "Captură de ecran"
+  },
+  "screenshot_toolbar_button_tooltiptext": {
+    "message": "Fă o captură de ecran ($SHORTCUT$)",
+    "placeholders": {
+      "shortcut": {
+        "content": "$1"
+      }
+    }
+  },
+  "screenshots_instructions": {
+    "message": "Trage sau dă clic pe pagină pentru a selecta o regiune. Apasă ESC pentru a renunța."
+  },
+  "screenshots_cancel_button": {
+    "message": "Anulează"
+  },
+  "screenshots_save_visible_button": {
+    "message": "Salvează porțiunea vizibilă"
+  },
+  "screenshots_save_page_button": {
+    "message": "Salvează pagina completă"
+  },
+  "screenshots_too_large_error_title": {
+    "message": "Captura de ecran a fost decupată deoarece era prea mare"
+  },
+  "screenshots_too_large_error_details": {
+    "message": "Încearcă să selectezi o regiune care are o latură mai lungă de 32.700 de pixeli sau o suprafață totală de 124.900.000 de pixeli."
+  },
+  "screenshots_component_retry_button_aria_label": {
+    "message": "Reîncearcă captura de ecran"
+  },
+  "screenshots_component_retry_button_title": {
+    "message": "Reîncearcă captura de ecran"
+  },
+  "screenshots_component_cancel_button_aria_label": {
+    "message": "Anulează"
+  },
+  "screenshots_component_cancel_button_title": {
+    "message": "Anulează (Esc)"
+  },
+  "screenshots_component_copy_button_2": {
+    "message": "Copiază"
+  },
+  "screenshots_component_copy_button_2_aria_label": {
+    "message": "Copiază"
+  },
+  "screenshots_component_copy_button_2_title": {
+    "message": "Copiază ($SHORTCUT$)",
+    "placeholders": {
+      "shortcut": {
+        "content": "$1"
+      }
+    }
+  },
+  "screenshots_component_download_button_2": {
+    "message": "Descarcă"
+  },
+  "screenshots_component_download_button_2_aria_label": {
+    "message": "Descarcă"
+  },
+  "screenshots_component_download_button_2_title": {
+    "message": "Descarcă ($SHORTCUT$)",
+    "placeholders": {
+      "shortcut": {
+        "content": "$1"
+      }
+    }
+  },
+  "screenshots_component_download_key": {
+    "message": "S"
+  },
+  "screenshots_component_copy_key": {
+    "message": "C"
+  },
+  "screenshots_overlay_selection_region_size_3": {
+    "message": "$WIDTH$ × $HEIGHT$",
+    "placeholders": {
+      "width": {
+        "content": "$1"
+      },
+      "height": {
+        "content": "$2"
+      }
+    }
+  },
+  "screenshots_overlay_preview_face_label_aria_label": {
+    "message": "Selectează această regiune"
+  },
+  "main_context_menu_take_screenshot_label": {
+    "message": "Fă o captură de ecran"
+  },
+  "main_context_menu_take_screenshot_accesskey": {
+    "message": "T"
+  },
+  "confirmation_hint_screenshot_copied": {
+    "message": "Captură de ecran copiată!"
+  }
+}

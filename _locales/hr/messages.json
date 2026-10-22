@@ -1,0 +1,100 @@
+{
+  "screenshot_toolbar_button_label": {
+    "message": "Snimka ekrana"
+  },
+  "screenshot_toolbar_button_tooltiptext": {
+    "message": "Snimi snimku ekrana ($SHORTCUT$)",
+    "placeholders": {
+      "shortcut": {
+        "content": "$1"
+      }
+    }
+  },
+  "screenshots_instructions": {
+    "message": "Povuci ili pritisni na stranicu za odabir regije. Pritisni ESC za prekid."
+  },
+  "screenshots_cancel_button": {
+    "message": "Odustani"
+  },
+  "screenshots_save_visible_button": {
+    "message": "Spremi vidljivo"
+  },
+  "screenshots_save_page_button": {
+    "message": "Spremi cijelu stranicu"
+  },
+  "screenshots_too_large_error_title": {
+    "message": "Tvoja je snimka ekrana odrezana jer je bila prevelika"
+  },
+  "screenshots_too_large_error_details": {
+    "message": "Pokušaj odabrati regiju koja je manja od 32.700 piksela na najdužoj strani ili koja ima ukupnu površinu od 124.900.000 piksela."
+  },
+  "screenshots_component_retry_button_aria_label": {
+    "message": "Ponovi snimanje ekrana"
+  },
+  "screenshots_component_retry_button_title": {
+    "message": "Ponovi snimanje ekrana"
+  },
+  "screenshots_component_cancel_button_aria_label": {
+    "message": "Odustani"
+  },
+  "screenshots_component_cancel_button_title": {
+    "message": "Odustani (Esc)"
+  },
+  "screenshots_component_copy_button_2": {
+    "message": "Kopiraj"
+  },
+  "screenshots_component_copy_button_2_aria_label": {
+    "message": "Kopiraj"
+  },
+  "screenshots_component_copy_button_2_title": {
+    "message": "Kopiraj ($SHORTCUT$)",
+    "placeholders": {
+      "shortcut": {
+        "content": "$1"
+      }
+    }
+  },
+  "screenshots_component_download_button_2": {
+    "message": "Preuzmi"
+  },
+  "screenshots_component_download_button_2_aria_label": {
+    "message": "Preuzmi"
+  },
+  "screenshots_component_download_button_2_title": {
+    "message": "Preuzmi ($SHORTCUT$)",
+    "placeholders": {
+      "shortcut": {
+        "content": "$1"
+      }
+    }
+  },
+  "screenshots_component_download_key": {
+    "message": "S"
+  },
+  "screenshots_component_copy_key": {
+    "message": "C"
+  },
+  "screenshots_overlay_selection_region_size_3": {
+    "message": "$WIDTH$ × $HEIGHT$",
+    "placeholders": {
+      "width": {
+        "content": "$1"
+      },
+      "height": {
+        "content": "$2"
+      }
+    }
+  },
+  "screenshots_overlay_preview_face_label_aria_label": {
+    "message": "Odaberi ovu reviziju"
+  },
+  "main_context_menu_take_screenshot_label": {
+    "message": "Snimi ekran"
+  },
+  "main_context_menu_take_screenshot_accesskey": {
+    "message": "e"
+  },
+  "confirmation_hint_screenshot_copied": {
+    "message": "Snimka ekrana je kopirana!"
+  }
+}

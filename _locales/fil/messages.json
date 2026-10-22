@@ -1,0 +1,23 @@
+{
+  "screenshots_instructions": {
+    "message": "Mag-drag o mag-click sa pahina upang pumili ng rehiyon. Pindutin ang ESC upang kanselahin."
+  },
+  "screenshots_cancel_button": {
+    "message": "Kanselahin"
+  },
+  "screenshots_save_visible_button": {
+    "message": "I-save na nakikita"
+  },
+  "screenshots_save_page_button": {
+    "message": "i-Save ang buong pahina"
+  },
+  "screenshots_too_large_error_title": {
+    "message": "Ang iyong screenshot ay na-crop dahil ito ay masyadong malaki"
+  },
+  "main_context_menu_take_screenshot_label": {
+    "message": "Kumuha ng Screenshot"
+  },
+  "main_context_menu_take_screenshot_accesskey": {
+    "message": "K"
+  }
+}

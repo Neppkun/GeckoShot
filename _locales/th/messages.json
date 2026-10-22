@@ -1,0 +1,100 @@
+{
+  "screenshot_toolbar_button_label": {
+    "message": "ภาพหน้าจอ"
+  },
+  "screenshot_toolbar_button_tooltiptext": {
+    "message": "จับภาพหน้าจอ ($SHORTCUT$)",
+    "placeholders": {
+      "shortcut": {
+        "content": "$1"
+      }
+    }
+  },
+  "screenshots_instructions": {
+    "message": "ลากหรือคลิกที่หน้าเพื่อเลือกบริเวณ กด ESC เพื่อยกเลิก"
+  },
+  "screenshots_cancel_button": {
+    "message": "ยกเลิก"
+  },
+  "screenshots_save_visible_button": {
+    "message": "บันทึกส่วนที่มองเห็น"
+  },
+  "screenshots_save_page_button": {
+    "message": "บันทึกเต็มหน้า"
+  },
+  "screenshots_too_large_error_title": {
+    "message": "ภาพหน้าจอของคุณถูกครอบตัดเนื่องจากมีขนาดใหญ่เกินไป"
+  },
+  "screenshots_too_large_error_details": {
+    "message": "ลองเลือกขอบเขตที่มีขนาดเล็กกว่า 32,700 พิกเซลที่ด้านยาวที่สุด หรือพื้นที่ทั้งหมด 124,900,000 พิกเซล"
+  },
+  "screenshots_component_retry_button_aria_label": {
+    "message": "ลองภาพหน้าจออีกครั้ง"
+  },
+  "screenshots_component_retry_button_title": {
+    "message": "ลองภาพหน้าจออีกครั้ง"
+  },
+  "screenshots_component_cancel_button_aria_label": {
+    "message": "ยกเลิก"
+  },
+  "screenshots_component_cancel_button_title": {
+    "message": "ยกเลิก (Esc)"
+  },
+  "screenshots_component_copy_button_2": {
+    "message": "คัดลอก"
+  },
+  "screenshots_component_copy_button_2_aria_label": {
+    "message": "คัดลอก"
+  },
+  "screenshots_component_copy_button_2_title": {
+    "message": "คัดลอก ($SHORTCUT$)",
+    "placeholders": {
+      "shortcut": {
+        "content": "$1"
+      }
+    }
+  },
+  "screenshots_component_download_button_2": {
+    "message": "ดาวน์โหลด"
+  },
+  "screenshots_component_download_button_2_aria_label": {
+    "message": "ดาวน์โหลด"
+  },
+  "screenshots_component_download_button_2_title": {
+    "message": "ดาวน์โหลด ($SHORTCUT$)",
+    "placeholders": {
+      "shortcut": {
+        "content": "$1"
+      }
+    }
+  },
+  "screenshots_component_download_key": {
+    "message": "S"
+  },
+  "screenshots_component_copy_key": {
+    "message": "C"
+  },
+  "screenshots_overlay_selection_region_size_3": {
+    "message": "$WIDTH$ × $HEIGHT$",
+    "placeholders": {
+      "width": {
+        "content": "$1"
+      },
+      "height": {
+        "content": "$2"
+      }
+    }
+  },
+  "screenshots_overlay_preview_face_label_aria_label": {
+    "message": "เลือกบริเวณนี้"
+  },
+  "main_context_menu_take_screenshot_label": {
+    "message": "ถ่ายภาพหน้าจอ"
+  },
+  "main_context_menu_take_screenshot_accesskey": {
+    "message": "ถ"
+  },
+  "confirmation_hint_screenshot_copied": {
+    "message": "คัดลอกภาพหน้าจอแล้ว!"
+  }
+}

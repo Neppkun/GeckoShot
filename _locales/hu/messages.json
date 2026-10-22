@@ -1,0 +1,100 @@
+{
+  "screenshot_toolbar_button_label": {
+    "message": "Képernyőkép"
+  },
+  "screenshot_toolbar_button_tooltiptext": {
+    "message": "Képernyőkép készítése ($SHORTCUT$)",
+    "placeholders": {
+      "shortcut": {
+        "content": "$1"
+      }
+    }
+  },
+  "screenshots_instructions": {
+    "message": "Húzza, vagy kattintson a lapra a terület kiválasztásához. A megszakításhoz nyomja meg az ESC billentyűt."
+  },
+  "screenshots_cancel_button": {
+    "message": "Mégse"
+  },
+  "screenshots_save_visible_button": {
+    "message": "Látható rész mentése"
+  },
+  "screenshots_save_page_button": {
+    "message": "Teljes oldal mentése"
+  },
+  "screenshots_too_large_error_title": {
+    "message": "A képernyőkép le lett vágva, mert túl nagy volt"
+  },
+  "screenshots_too_large_error_details": {
+    "message": "Próbáljon egy 32 700 képpontosnál kisebb szélességű, vagy egy 124 900 000 képpontosnál kisebb összképpontszámú területet kiválasztani ."
+  },
+  "screenshots_component_retry_button_aria_label": {
+    "message": "Képernyőkép újbóli elkészítése"
+  },
+  "screenshots_component_retry_button_title": {
+    "message": "Képernyőkép újbóli elkészítése"
+  },
+  "screenshots_component_cancel_button_aria_label": {
+    "message": "Mégse"
+  },
+  "screenshots_component_cancel_button_title": {
+    "message": "Mégse (Esc)"
+  },
+  "screenshots_component_copy_button_2": {
+    "message": "Másolás"
+  },
+  "screenshots_component_copy_button_2_aria_label": {
+    "message": "Másolás"
+  },
+  "screenshots_component_copy_button_2_title": {
+    "message": "Másolás ($SHORTCUT$)",
+    "placeholders": {
+      "shortcut": {
+        "content": "$1"
+      }
+    }
+  },
+  "screenshots_component_download_button_2": {
+    "message": "Letöltés"
+  },
+  "screenshots_component_download_button_2_aria_label": {
+    "message": "Letöltés"
+  },
+  "screenshots_component_download_button_2_title": {
+    "message": "Letöltés ($SHORTCUT$)",
+    "placeholders": {
+      "shortcut": {
+        "content": "$1"
+      }
+    }
+  },
+  "screenshots_component_download_key": {
+    "message": "S"
+  },
+  "screenshots_component_copy_key": {
+    "message": "C"
+  },
+  "screenshots_overlay_selection_region_size_3": {
+    "message": "$WIDTH$ × $HEIGHT$",
+    "placeholders": {
+      "width": {
+        "content": "$1"
+      },
+      "height": {
+        "content": "$2"
+      }
+    }
+  },
+  "screenshots_overlay_preview_face_label_aria_label": {
+    "message": "Válassza ki ezt a régiót"
+  },
+  "main_context_menu_take_screenshot_label": {
+    "message": "Képernyőkép készítése"
+  },
+  "main_context_menu_take_screenshot_accesskey": {
+    "message": "e"
+  },
+  "confirmation_hint_screenshot_copied": {
+    "message": "Képernyőkép másolva."
+  }
+}

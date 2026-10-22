@@ -1,0 +1,23 @@
+{
+  "screenshots_instructions": {
+    "message": "ড্রাগ করে অথবা পাতায় ক্লিক করে একটি অংশ নির্বাচন করুন। বাতিল করতে ESC চাপুন।"
+  },
+  "screenshots_cancel_button": {
+    "message": "বাতিল"
+  },
+  "screenshots_save_visible_button": {
+    "message": "যতটুকু দেখা যাচ্ছে সংরক্ষণ করুন"
+  },
+  "screenshots_save_page_button": {
+    "message": "সম্পূর্ণ পাতা সংরক্ষণ করুন"
+  },
+  "main_context_menu_take_screenshot_label": {
+    "message": "স্ক্রিনশট নিন"
+  },
+  "main_context_menu_take_screenshot_accesskey": {
+    "message": "T"
+  },
+  "confirmation_hint_screenshot_copied": {
+    "message": "স্ক্রিনশট কপি করা হয়েছে!"
+  }
+}

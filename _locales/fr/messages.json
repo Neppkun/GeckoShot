@@ -1,0 +1,100 @@
+{
+  "screenshot_toolbar_button_label": {
+    "message": "Capture d’écran"
+  },
+  "screenshot_toolbar_button_tooltiptext": {
+    "message": "Prendre une capture d’écran ($SHORTCUT$)",
+    "placeholders": {
+      "shortcut": {
+        "content": "$1"
+      }
+    }
+  },
+  "screenshots_instructions": {
+    "message": "Sélectionnez une zone de la page par cliquer-glisser ou en cliquant sur l’élément à sélectionner. Appuyez sur Échap pour annuler."
+  },
+  "screenshots_cancel_button": {
+    "message": "Annuler"
+  },
+  "screenshots_save_visible_button": {
+    "message": "Capturer la zone visible"
+  },
+  "screenshots_save_page_button": {
+    "message": "Capturer la page complète"
+  },
+  "screenshots_too_large_error_title": {
+    "message": "Votre capture d’écran a été rognée car elle était trop grande"
+  },
+  "screenshots_too_large_error_details": {
+    "message": "Essayez de sélectionner une zone dont le plus grand côté contient moins de 32 700 pixels ou dont la surface n’excède pas 124 900 000 pixels."
+  },
+  "screenshots_component_retry_button_aria_label": {
+    "message": "Reprendre une capture d’écran"
+  },
+  "screenshots_component_retry_button_title": {
+    "message": "Reprendre une capture d’écran"
+  },
+  "screenshots_component_cancel_button_aria_label": {
+    "message": "Annuler"
+  },
+  "screenshots_component_cancel_button_title": {
+    "message": "Annuler (Échap)"
+  },
+  "screenshots_component_copy_button_2": {
+    "message": "Copier"
+  },
+  "screenshots_component_copy_button_2_aria_label": {
+    "message": "Copier"
+  },
+  "screenshots_component_copy_button_2_title": {
+    "message": "Copier ($SHORTCUT$)",
+    "placeholders": {
+      "shortcut": {
+        "content": "$1"
+      }
+    }
+  },
+  "screenshots_component_download_button_2": {
+    "message": "Télécharger"
+  },
+  "screenshots_component_download_button_2_aria_label": {
+    "message": "Télécharger"
+  },
+  "screenshots_component_download_button_2_title": {
+    "message": "Télécharger ($SHORTCUT$)",
+    "placeholders": {
+      "shortcut": {
+        "content": "$1"
+      }
+    }
+  },
+  "screenshots_component_download_key": {
+    "message": "S"
+  },
+  "screenshots_component_copy_key": {
+    "message": "C"
+  },
+  "screenshots_overlay_selection_region_size_3": {
+    "message": "$WIDTH$ × $HEIGHT$",
+    "placeholders": {
+      "width": {
+        "content": "$1"
+      },
+      "height": {
+        "content": "$2"
+      }
+    }
+  },
+  "screenshots_overlay_preview_face_label_aria_label": {
+    "message": "Sélectionner cette zone"
+  },
+  "main_context_menu_take_screenshot_label": {
+    "message": "Effectuer une capture d’écran"
+  },
+  "main_context_menu_take_screenshot_accesskey": {
+    "message": "E"
+  },
+  "confirmation_hint_screenshot_copied": {
+    "message": "Capture d’écran copiée !"
+  }
+}

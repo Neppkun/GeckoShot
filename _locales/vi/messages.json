@@ -1,0 +1,100 @@
+{
+  "screenshot_toolbar_button_label": {
+    "message": "Chụp màn hình"
+  },
+  "screenshot_toolbar_button_tooltiptext": {
+    "message": "Chụp màn hình ($SHORTCUT$)",
+    "placeholders": {
+      "shortcut": {
+        "content": "$1"
+      }
+    }
+  },
+  "screenshots_instructions": {
+    "message": "Kéo hoặc nhấp vào trang để chọn một khu vực. Nhấn ESC để hủy bỏ."
+  },
+  "screenshots_cancel_button": {
+    "message": "Hủy bỏ"
+  },
+  "screenshots_save_visible_button": {
+    "message": "Lưu phần nhìn thấy"
+  },
+  "screenshots_save_page_button": {
+    "message": "Lưu toàn trang"
+  },
+  "screenshots_too_large_error_title": {
+    "message": "Ảnh chụp màn hình của bạn đã bị cắt vì nó quá lớn"
+  },
+  "screenshots_too_large_error_details": {
+    "message": "Thử chọn vùng có cạnh dài nhất nhỏ hơn 32.700 pixel hoặc tổng diện tích 124.900.000 pixel."
+  },
+  "screenshots_component_retry_button_aria_label": {
+    "message": "Thử chụp ảnh màn hình lại"
+  },
+  "screenshots_component_retry_button_title": {
+    "message": "Thử chụp ảnh màn hình lại"
+  },
+  "screenshots_component_cancel_button_aria_label": {
+    "message": "Hủy bỏ"
+  },
+  "screenshots_component_cancel_button_title": {
+    "message": "Hủy bỏ (Esc)"
+  },
+  "screenshots_component_copy_button_2": {
+    "message": "Sao chép"
+  },
+  "screenshots_component_copy_button_2_aria_label": {
+    "message": "Sao chép"
+  },
+  "screenshots_component_copy_button_2_title": {
+    "message": "Sao chép ($SHORTCUT$)",
+    "placeholders": {
+      "shortcut": {
+        "content": "$1"
+      }
+    }
+  },
+  "screenshots_component_download_button_2": {
+    "message": "Tải xuống"
+  },
+  "screenshots_component_download_button_2_aria_label": {
+    "message": "Tải xuống"
+  },
+  "screenshots_component_download_button_2_title": {
+    "message": "Tải xuống ($SHORTCUT$)",
+    "placeholders": {
+      "shortcut": {
+        "content": "$1"
+      }
+    }
+  },
+  "screenshots_component_download_key": {
+    "message": "S"
+  },
+  "screenshots_component_copy_key": {
+    "message": "C"
+  },
+  "screenshots_overlay_selection_region_size_3": {
+    "message": "$WIDTH$ × $HEIGHT$",
+    "placeholders": {
+      "width": {
+        "content": "$1"
+      },
+      "height": {
+        "content": "$2"
+      }
+    }
+  },
+  "screenshots_overlay_preview_face_label_aria_label": {
+    "message": "Chọn khu vực này"
+  },
+  "main_context_menu_take_screenshot_label": {
+    "message": "Chụp màn hình"
+  },
+  "main_context_menu_take_screenshot_accesskey": {
+    "message": "T"
+  },
+  "confirmation_hint_screenshot_copied": {
+    "message": "Đã sao chép ảnh chụp màn hình!"
+  }
+}

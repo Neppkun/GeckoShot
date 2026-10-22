@@ -1,0 +1,100 @@
+{
+  "screenshot_toolbar_button_label": {
+    "message": "Captura de ecrã"
+  },
+  "screenshot_toolbar_button_tooltiptext": {
+    "message": "Tirar uma captura de ecrã ($SHORTCUT$)",
+    "placeholders": {
+      "shortcut": {
+        "content": "$1"
+      }
+    }
+  },
+  "screenshots_instructions": {
+    "message": "Arraste ou clique na página para selecionar uma região. Pressione ESC para cancelar."
+  },
+  "screenshots_cancel_button": {
+    "message": "Cancelar"
+  },
+  "screenshots_save_visible_button": {
+    "message": "Guardar visível"
+  },
+  "screenshots_save_page_button": {
+    "message": "Guardar página completa"
+  },
+  "screenshots_too_large_error_title": {
+    "message": "A sua captura de ecrã foi cortada porque era demasiado grande"
+  },
+  "screenshots_too_large_error_details": {
+    "message": "Experimente selecionar uma região que tenha menos de 32700 pixels no lado maior ou 124900000 pixels de área total."
+  },
+  "screenshots_component_retry_button_aria_label": {
+    "message": "Tentar novamente a captura de ecrã"
+  },
+  "screenshots_component_retry_button_title": {
+    "message": "Tentar novamente a captura de ecrã"
+  },
+  "screenshots_component_cancel_button_aria_label": {
+    "message": "Cancelar"
+  },
+  "screenshots_component_cancel_button_title": {
+    "message": "Cancelar (Esc)"
+  },
+  "screenshots_component_copy_button_2": {
+    "message": "Copiar"
+  },
+  "screenshots_component_copy_button_2_aria_label": {
+    "message": "Copiar"
+  },
+  "screenshots_component_copy_button_2_title": {
+    "message": "Copiar ($SHORTCUT$)",
+    "placeholders": {
+      "shortcut": {
+        "content": "$1"
+      }
+    }
+  },
+  "screenshots_component_download_button_2": {
+    "message": "Transferir"
+  },
+  "screenshots_component_download_button_2_aria_label": {
+    "message": "Transferir"
+  },
+  "screenshots_component_download_button_2_title": {
+    "message": "Transferir ($SHORTCUT$)",
+    "placeholders": {
+      "shortcut": {
+        "content": "$1"
+      }
+    }
+  },
+  "screenshots_component_download_key": {
+    "message": "S"
+  },
+  "screenshots_component_copy_key": {
+    "message": "C"
+  },
+  "screenshots_overlay_selection_region_size_3": {
+    "message": "$WIDTH$ × $HEIGHT$",
+    "placeholders": {
+      "width": {
+        "content": "$1"
+      },
+      "height": {
+        "content": "$2"
+      }
+    }
+  },
+  "screenshots_overlay_preview_face_label_aria_label": {
+    "message": "Selecionar esta região"
+  },
+  "main_context_menu_take_screenshot_label": {
+    "message": "Tirar uma captura de ecrã"
+  },
+  "main_context_menu_take_screenshot_accesskey": {
+    "message": "T"
+  },
+  "confirmation_hint_screenshot_copied": {
+    "message": "Captura de ecrã copiada!"
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "screenshot_toolbar_button_label": {
+    "message": "Snímka obrazovky"
+  },
+  "screenshot_toolbar_button_tooltiptext": {
+    "message": "Urobiť snímku obrazovky ($SHORTCUT$)",
+    "placeholders": {
+      "shortcut": {
+        "content": "$1"
+      }
+    }
+  },
+  "screenshots_instructions": {
+    "message": "Potiahnutím alebo kliknutím na stránku vyberte oblasť. Nástroj zrušíte stlačením klávesu ESC."
+  },
+  "screenshots_cancel_button": {
+    "message": "Zrušiť"
+  },
+  "screenshots_save_visible_button": {
+    "message": "Uložiť viditeľnú časť"
+  },
+  "screenshots_save_page_button": {
+    "message": "Uložiť celú stránku"
+  },
+  "screenshots_too_large_error_title": {
+    "message": "Vaša snímka obrazovky bola orezaná, pretože bola príliš veľká"
+  },
+  "screenshots_too_large_error_details": {
+    "message": "Skúste vybrať oblasť, ktorá je menšia ako 32 700 pixelov na jej dlhšej strane alebo jej celková plocha je menej 124 900 000 pixelov."
+  },
+  "screenshots_component_retry_button_aria_label": {
+    "message": "Skúsiť snímku obrazovky znova"
+  },
+  "screenshots_component_retry_button_title": {
+    "message": "Skúsiť snímku obrazovky znova"
+  },
+  "screenshots_component_cancel_button_aria_label": {
+    "message": "Zrušiť"
+  },
+  "screenshots_component_cancel_button_title": {
+    "message": "Zrušiť (Esc)"
+  },
+  "screenshots_component_copy_button_2": {
+    "message": "Kopírovať"
+  },
+  "screenshots_component_copy_button_2_aria_label": {
+    "message": "Kopírovať"
+  },
+  "screenshots_component_copy_button_2_title": {
+    "message": "Kopírovať ($SHORTCUT$)",
+    "placeholders": {
+      "shortcut": {
+        "content": "$1"
+      }
+    }
+  },
+  "screenshots_component_download_button_2": {
+    "message": "Stiahnuť"
+  },
+  "screenshots_component_download_button_2_aria_label": {
+    "message": "Stiahnuť"
+  },
+  "screenshots_component_download_button_2_title": {
+    "message": "Stiahnuť ($SHORTCUT$)",
+    "placeholders": {
+      "shortcut": {
+        "content": "$1"
+      }
+    }
+  },
+  "screenshots_component_download_key": {
+    "message": "S"
+  },
+  "screenshots_component_copy_key": {
+    "message": "C"
+  },
+  "screenshots_overlay_selection_region_size_3": {
+    "message": "$WIDTH$ × $HEIGHT$",
+    "placeholders": {
+      "width": {
+        "content": "$1"
+      },
+      "height": {
+        "content": "$2"
+      }
+    }
+  },
+  "screenshots_overlay_preview_face_label_aria_label": {
+    "message": "Vybrať túto oblasť"
+  },
+  "main_context_menu_take_screenshot_label": {
+    "message": "Urobiť snímku obrazovky"
+  },
+  "main_context_menu_take_screenshot_accesskey": {
+    "message": "r"
+  },
+  "confirmation_hint_screenshot_copied": {
+    "message": "Snímka obrazovky bola skopírovaná!"
+  }
+}

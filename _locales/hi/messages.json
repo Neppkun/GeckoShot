@@ -1,0 +1,37 @@
+{
+  "screenshots_instructions": {
+    "message": "किसी क्षेत्र को चुनने के लिए पृष्ठ पर खींचें या क्लिक करें. रद्द करने के लिए ESC दबाएँ."
+  },
+  "screenshots_cancel_button": {
+    "message": "रद्द करें"
+  },
+  "screenshots_save_visible_button": {
+    "message": "दृश्यमान सहेजें"
+  },
+  "screenshots_save_page_button": {
+    "message": "पूर्ण पृष्ठ सहेजें"
+  },
+  "screenshots_component_download_key": {
+    "message": "S"
+  },
+  "screenshots_component_copy_key": {
+    "message": "C"
+  },
+  "screenshots_overlay_selection_region_size_3": {
+    "message": "$WIDTH$ × $HEIGHT$",
+    "placeholders": {
+      "width": {
+        "content": "$1"
+      },
+      "height": {
+        "content": "$2"
+      }
+    }
+  },
+  "main_context_menu_take_screenshot_label": {
+    "message": "स्क्रीनशॉट लें"
+  },
+  "main_context_menu_take_screenshot_accesskey": {
+    "message": "T"
+  }
+}

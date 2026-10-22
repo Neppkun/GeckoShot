@@ -1,0 +1,20 @@
+{
+  "screenshots_instructions": {
+    "message": "Seret atau klik pada halaman untuk memilih kawasan. Tekan ESC untuk batalkan."
+  },
+  "screenshots_cancel_button": {
+    "message": "Batal"
+  },
+  "screenshots_save_visible_button": {
+    "message": "Simpan yang terpapar"
+  },
+  "screenshots_save_page_button": {
+    "message": "Simpan halaman penuh"
+  },
+  "main_context_menu_take_screenshot_label": {
+    "message": "Ambil skrinsyot"
+  },
+  "main_context_menu_take_screenshot_accesskey": {
+    "message": "s"
+  }
+}

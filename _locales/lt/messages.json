@@ -1,0 +1,26 @@
+{
+  "screenshots_instructions": {
+    "message": "Tempkite arba spustelėkite tinklalapyje norėdami pasirinkti regioną. Spustelėkite „ESC“ norėdami atsisakyti."
+  },
+  "screenshots_cancel_button": {
+    "message": "Atsisakyti"
+  },
+  "screenshots_save_visible_button": {
+    "message": "Įrašyti matomą"
+  },
+  "screenshots_save_page_button": {
+    "message": "Įrašyti visą tinklalapį"
+  },
+  "screenshots_component_retry_button_aria_label": {
+    "message": "Kartoti ekrano nuotrauką"
+  },
+  "screenshots_component_retry_button_title": {
+    "message": "Kartoti ekrano nuotrauką"
+  },
+  "main_context_menu_take_screenshot_label": {
+    "message": "Padaryti ekrano nuotrauką"
+  },
+  "main_context_menu_take_screenshot_accesskey": {
+    "message": "n"
+  }
+}
