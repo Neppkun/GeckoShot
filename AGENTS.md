@@ -82,7 +82,7 @@ browser. There is no build step: the files in the repo are what ships.
 | `tools/import-firefox-l10n.py` | Regenerates `_locales/` | none |
 | `test/e2e.mjs`, `test/page.html` | End-to-end test in Playwright Chromium | none |
 | `tools/build.mjs` | `npm run build`: packages `dist/geckoshot-<version>.crx` and `.zip` | none |
-| `.github/workflows/ci.yml` | Tests every push/PR; on a `v*` tag, builds and publishes a GitHub Release | none |
+| `.github/workflows/ci.yml` | Builds every push/PR; on a `v*` tag, publishes a GitHub Release (no tests in CI) | none |
 
 ## How it fits together
 
@@ -161,7 +161,7 @@ npm test
   access, since `activeTab` needs a real click. It also launches Chromium with
   `--disable-features=DisableLoadExtensionCommandLineSwitch`, because
   `--load-extension` is ignored otherwise.
-- `npm test` must pass before you commit. Add a test step for every bug you fix
+- CI doesn't run the tests, so `npm test` must pass locally before you commit. Add a test step for every bug you fix
   or behaviour you add, and reproduce the bug in the test before fixing it.
 - `HEADED=1` shows the browser. `SCREENSHOTS_OUT=<dir>` keeps per-step
   screenshots, so look at them after UI changes.
