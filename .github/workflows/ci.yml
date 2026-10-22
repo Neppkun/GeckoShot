@@ -17,11 +17,15 @@ jobs:
   package:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
         with:
-          node-version: 22
+          # 26.12.1 is the October 2026 security release that blocks the
+          # compromised eMudhra intermediate CAs; never go below it.
+          node-version: ">=26.12.1 <27"
+          check-latest: true
           cache: npm
+      - run: node --version
       # Playwright is only needed for the tests; don't download its browsers.
       - run: npm ci
         env:
@@ -37,7 +41,7 @@ jobs:
       - run: npm run build
         env:
           CRX_PRIVATE_KEY: ${{ secrets.CRX_PRIVATE_KEY }}
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         with:
           name: geckoshot
           path: dist/*
@@ -49,7 +53,7 @@ jobs:
     permissions:
       contents: write
     steps:
-      - uses: actions/download-artifact@v4
+      - uses: actions/download-artifact@v8
         with:
           name: geckoshot
           path: dist
