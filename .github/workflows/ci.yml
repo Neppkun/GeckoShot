@@ -1,23 +1,40 @@
-# Packages the extension on every push and pull request, and publishes a
-# GitHub Release with the CRX and ZIP when a version tag (v1.2.3) is pushed.
-# The Playwright tests run locally (npm test), not here.
+# Packages the extension on every push and pull request. When you publish a
+# GitHub Release (written by hand, with its changelog), builds that tag and
+# attaches the CRX and ZIP to it. The Playwright tests run locally
+# (npm test), not here.
+#
+# To attach the files to a release that already exists, run this workflow
+# manually: Actions > CI > Run workflow, with the release's tag.
 
 name: CI
 
 on:
   push:
     branches: [main]
-    tags: ["v*"]
   pull_request:
+  release:
+    types: [published]
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: Release tag to attach the CRX and ZIP to (e.g. v1.0.0)
+        required: true
 
 permissions:
   contents: read
+
+env:
+  # Set when building for a release; empty for pushes and pull requests.
+  RELEASE_TAG: ${{ github.event.release.tag_name || inputs.tag }}
 
 jobs:
   package:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7
+        with:
+          # Empty (the default ref) except for manual runs.
+          ref: ${{ inputs.tag }}
       - uses: actions/setup-node@v7
         with:
           # 26.12.1 is the October 2026 security release that blocks the
@@ -31,11 +48,11 @@ jobs:
         env:
           PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD: 1
       - name: Check the tag matches manifest.json
-        if: startsWith(github.ref, 'refs/tags/v')
+        if: env.RELEASE_TAG
         run: |
           version=$(node -p "require('./manifest.json').version")
-          if [ "v$version" != "$GITHUB_REF_NAME" ]; then
-            echo "::error::Tag $GITHUB_REF_NAME doesn't match manifest.json version $version"
+          if [ "v$version" != "$RELEASE_TAG" ]; then
+            echo "::error::Tag $RELEASE_TAG doesn't match manifest.json version $version"
             exit 1
           fi
       - run: npm run build
@@ -47,7 +64,7 @@ jobs:
           path: dist/*
 
   release:
-    if: startsWith(github.ref, 'refs/tags/v')
+    if: github.event_name == 'release' || github.event_name == 'workflow_dispatch'
     needs: package
     runs-on: ubuntu-latest
     permissions:
@@ -57,12 +74,7 @@ jobs:
         with:
           name: geckoshot
           path: dist
-      - name: Publish the release
+      - name: Attach the CRX and ZIP to the release
         env:
           GH_TOKEN: ${{ github.token }}
-        run: |
-          gh release create "$GITHUB_REF_NAME" dist/* \
-            --repo "$GITHUB_REPOSITORY" \
-            --title "GeckoShot $GITHUB_REF_NAME" \
-            --generate-notes \
-            --notes "**Which file?** Chrome, Edge and Brave on Windows/macOS only allow extensions from the Web Store, so download the \`.zip\`, unzip it, and use *Load unpacked* on \`chrome://extensions\` (Developer mode). Helium, ungoogled-chromium and Chromium on Linux can install the \`.crx\` directly."
+        run: gh release upload "$RELEASE_TAG" dist/* --clobber --repo "$GITHUB_REPOSITORY"
