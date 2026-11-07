@@ -96,5 +96,11 @@
   },
   "confirmation_hint_screenshot_copied": {
     "message": "截图已复制！"
+  },
+  "applications_always_ask_label": {
+    "message": "每次都问我"
+  },
+  "fonts_label_default_unnamed_label": {
+    "message": "默认"
   }
 }

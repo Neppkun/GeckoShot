@@ -96,5 +96,11 @@
   },
   "confirmation_hint_screenshot_copied": {
     "message": "Kuvakaappaus kopioitu!"
+  },
+  "applications_always_ask_label": {
+    "message": "Kysy aina"
+  },
+  "fonts_label_default_unnamed_label": {
+    "message": "Oletus"
   }
 }

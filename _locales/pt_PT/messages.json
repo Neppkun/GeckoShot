@@ -96,5 +96,11 @@
   },
   "confirmation_hint_screenshot_copied": {
     "message": "Captura de ecrã copiada!"
+  },
+  "applications_always_ask_label": {
+    "message": "Perguntar sempre"
+  },
+  "fonts_label_default_unnamed_label": {
+    "message": "Predefinido"
   }
 }

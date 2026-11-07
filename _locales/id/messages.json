@@ -96,5 +96,11 @@
   },
   "confirmation_hint_screenshot_copied": {
     "message": "Tangkapan layar disalin!"
+  },
+  "applications_always_ask_label": {
+    "message": "Tanyakan selalu"
+  },
+  "fonts_label_default_unnamed_label": {
+    "message": "Baku"
   }
 }

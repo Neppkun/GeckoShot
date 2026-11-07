@@ -96,5 +96,11 @@
   },
   "confirmation_hint_screenshot_copied": {
     "message": "Capture d’écran copiée !"
+  },
+  "applications_always_ask_label": {
+    "message": "Toujours demander"
+  },
+  "fonts_label_default_unnamed_label": {
+    "message": "Par défaut"
   }
 }

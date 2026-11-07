@@ -96,5 +96,11 @@
   },
   "confirmation_hint_screenshot_copied": {
     "message": "Snimka ekrana je kopirana!"
+  },
+  "applications_always_ask_label": {
+    "message": "Uvijek pitaj"
+  },
+  "fonts_label_default_unnamed_label": {
+    "message": "Standardno"
   }
 }
