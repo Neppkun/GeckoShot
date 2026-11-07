@@ -93,8 +93,11 @@ const ScreenshotsUtils = {
    * The toolbar button, keyboard shortcut and context menu items: open
    * screenshots, or close them if they're already open.
    *
-   * Firefox always opens the overlay. GeckoShot can default to something
-   * else, picked in the toolbar button's context menu (see background.js).
+   * Firefox always opens the overlay. GeckoShot can default to saving the
+   * full page or the visible area right away, for people who always take
+   * the same kind of screenshot and don't want an extra click each time.
+   * Picked in the toolbar button's context menu (see background.js); the
+   * default stays "Always ask", which is Firefox's behaviour.
    *
    * @param {string} [defaultAction] "ask" (the default), "fullpage" or
    *   "visible".
@@ -324,7 +327,7 @@ const ScreenshotsUtils = {
   /**
    * "Save visible" / "Save full page" as the default: capture and download
    * straight away, without the overlay or the preview. Firefox has no such
-   * mode.
+   * mode; see toggle() for why.
    *
    * @param {string} type "Visible" or "FullPage".
    */

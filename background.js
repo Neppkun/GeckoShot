@@ -63,7 +63,8 @@ chrome.action.onClicked.addListener(toggleDefault);
 // Firefox's toolbar button has no menu of its own. Here its context menu
 // picks the default behaviour of the button, the shortcut and the page's
 // "Take Screenshot" item, stored as the defaultAction pref. Its own
-// "Take Screenshot" item always opens the overlay.
+// "Take Screenshot" item always opens the overlay. See
+// ScreenshotsUtils.toggle() for why.
 const DEFAULT_ACTIONS = {
   ask: chrome.i18n.getMessage("applications_always_ask_label"),
   fullpage: chrome.i18n.getMessage("screenshots_save_page_button"),
