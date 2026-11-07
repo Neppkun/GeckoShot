@@ -20,17 +20,20 @@ const CONTENT_SCRIPTS = [
 /**
  * ScreenshotsUtils.toggle() for the given tab, injecting the content side on
  * first use.
+ *
+ * @param {string} [defaultAction] One of DEFAULT_ACTIONS; "ask" if omitted.
  */
-async function toggle(tab) {
+async function toggle(tab, defaultAction = "ask") {
   let target = { tabId: tab.id };
   let run = () =>
     chrome.scripting.executeScript({
       target,
-      func: () => {
+      args: [defaultAction],
+      func: action => {
         if (typeof ScreenshotsUtils === "undefined") {
           return false;
         }
-        ScreenshotsUtils.toggle();
+        ScreenshotsUtils.toggle(action);
         return true;
       },
     });
@@ -46,19 +49,75 @@ async function toggle(tab) {
   }
 }
 
-chrome.action.onClicked.addListener(toggle);
+/**
+ * toggle() with the default picked in the toolbar button's context menu.
+ */
+async function toggleDefault(tab) {
+  let { defaultAction = "ask" } = await chrome.storage.local.get("defaultAction");
+  await toggle(tab, defaultAction);
+}
 
-chrome.runtime.onInstalled.addListener(() => {
+// Also the keyboard shortcut (_execute_action).
+chrome.action.onClicked.addListener(toggleDefault);
+
+// Firefox's toolbar button has no menu of its own. Here its context menu
+// picks the default behaviour of the button, the shortcut and the page's
+// "Take Screenshot" item, stored as the defaultAction pref. Its own
+// "Take Screenshot" item always opens the overlay.
+const DEFAULT_ACTIONS = {
+  ask: chrome.i18n.getMessage("applications_always_ask_label"),
+  fullpage: chrome.i18n.getMessage("screenshots_save_page_button"),
+  visible: chrome.i18n.getMessage("screenshots_save_visible_button"),
+};
+
+/**
+ * (Re)create every menu item. Chrome keeps them across restarts, but not
+ * necessarily which radio is checked, so this also runs on startup.
+ */
+async function createContextMenus() {
+  await chrome.contextMenus.removeAll();
+  let { defaultAction = "ask" } = await chrome.storage.local.get("defaultAction");
+  let takeScreenshot = chrome.i18n.getMessage("main_context_menu_take_screenshot_label");
+
   chrome.contextMenus.create({
     id: "context-take-screenshot",
-    title: chrome.i18n.getMessage("main_context_menu_take_screenshot_label"),
-    contexts: ["all"],
+    title: takeScreenshot,
+    // Not "all", which includes the toolbar button's menu.
+    contexts: ["page", "frame", "selection", "link", "editable", "image", "video", "audio"],
   });
-});
+  chrome.contextMenus.create({
+    id: "action-take-screenshot",
+    title: takeScreenshot,
+    contexts: ["action"],
+  });
+  chrome.contextMenus.create({
+    id: "action-default",
+    title: chrome.i18n.getMessage("fonts_label_default_unnamed_label"),
+    contexts: ["action"],
+  });
+  for (let [action, title] of Object.entries(DEFAULT_ACTIONS)) {
+    chrome.contextMenus.create({
+      id: `default-${action}`,
+      parentId: "action-default",
+      type: "radio",
+      title,
+      checked: action === defaultAction,
+      contexts: ["action"],
+    });
+  }
+}
+
+chrome.runtime.onInstalled.addListener(createContextMenus);
+chrome.runtime.onStartup.addListener(createContextMenus);
 
 chrome.contextMenus.onClicked.addListener((info, tab) => {
-  if (info.menuItemId === "context-take-screenshot") {
+  let id = String(info.menuItemId);
+  if (id === "context-take-screenshot") {
+    toggleDefault(tab);
+  } else if (id === "action-take-screenshot") {
     toggle(tab);
+  } else if (id.startsWith("default-")) {
+    chrome.storage.local.set({ defaultAction: id.slice("default-".length) });
   }
 });
 

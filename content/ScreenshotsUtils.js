@@ -90,12 +90,22 @@ const ScreenshotsUtils = {
   previousFocus: null,
 
   /**
-   * The toolbar button, keyboard shortcut and context menu item: open
+   * The toolbar button, keyboard shortcut and context menu items: open
    * screenshots, or close them if they're already open.
+   *
+   * Firefox always opens the overlay. GeckoShot can default to something
+   * else, picked in the toolbar button's context menu (see background.js).
+   *
+   * @param {string} [defaultAction] "ask" (the default), "fullpage" or
+   *   "visible".
    */
-  async toggle() {
+  async toggle(defaultAction = "ask") {
     if (this.active) {
       this.exit();
+      return;
+    }
+    if (defaultAction === "fullpage" || defaultAction === "visible") {
+      await this.saveDirectly(defaultAction === "fullpage" ? "FullPage" : "Visible");
       return;
     }
     await this.start();
@@ -288,21 +298,7 @@ const ScreenshotsUtils = {
    * @param {string} type "Visible" or "FullPage".
    */
   async takeScreenshot(type) {
-    let {
-      scrollMinX,
-      scrollMinY,
-      scrollWidth,
-      scrollHeight,
-      pageScrollX,
-      pageScrollY,
-      clientWidth,
-      clientHeight,
-    } = this.overlay.windowDimensions.dimensions;
-    let rect =
-      type === "FullPage"
-        ? { left: scrollMinX, top: scrollMinY, width: scrollWidth, height: scrollHeight }
-        : { left: pageScrollX, top: pageScrollY, width: clientWidth, height: clientHeight };
-
+    let rect = this.pageRect(type, this.overlay.windowDimensions);
     this.hideOverlay();
     let canvas = await this.createCanvas(rect);
     if (!this.active) {
@@ -323,6 +319,50 @@ const ScreenshotsUtils = {
       "lastScreenshotMethod",
       type === "FullPage" ? "fullpage" : "visible"
     );
+  },
+
+  /**
+   * "Save visible" / "Save full page" as the default: capture and download
+   * straight away, without the overlay or the preview. Firefox has no such
+   * mode.
+   *
+   * @param {string} type "Visible" or "FullPage".
+   */
+  async saveDirectly(type) {
+    this.active = true;
+    this.overlay ??= new ScreenshotsOverlay(document);
+    let windowDimensions = new WindowDimensions();
+    windowDimensions.dimensions = this.overlay.getDimensionsFromWindow();
+    try {
+      let canvas = await this.createCanvas(this.pageRect(type, windowDimensions));
+      if (this.active) {
+        await this.downloadScreenshot(canvas);
+      }
+    } finally {
+      this.exit();
+    }
+  },
+
+  /**
+   * The area "Visible" or "FullPage" captures, in page coordinates.
+   *
+   * @param {string} type "Visible" or "FullPage".
+   * @param {WindowDimensions} windowDimensions
+   */
+  pageRect(type, windowDimensions) {
+    let {
+      scrollMinX,
+      scrollMinY,
+      scrollWidth,
+      scrollHeight,
+      pageScrollX,
+      pageScrollY,
+      clientWidth,
+      clientHeight,
+    } = windowDimensions.dimensions;
+    return type === "FullPage"
+      ? { left: scrollMinX, top: scrollMinY, width: scrollWidth, height: scrollHeight }
+      : { left: pageScrollX, top: pageScrollY, width: clientWidth, height: clientHeight };
   },
 
   /**
