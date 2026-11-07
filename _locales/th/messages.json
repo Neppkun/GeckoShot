@@ -96,5 +96,11 @@
   },
   "confirmation_hint_screenshot_copied": {
     "message": "คัดลอกภาพหน้าจอแล้ว!"
+  },
+  "applications_always_ask_label": {
+    "message": "ถามเสมอ"
+  },
+  "fonts_label_default_unnamed_label": {
+    "message": "ค่าเริ่มต้น"
   }
 }

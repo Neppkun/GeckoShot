@@ -96,5 +96,11 @@
   },
   "confirmation_hint_screenshot_copied": {
     "message": "Скриншот скопирован!"
+  },
+  "applications_always_ask_label": {
+    "message": "Всегда спрашивать"
+  },
+  "fonts_label_default_unnamed_label": {
+    "message": "По умолчанию"
   }
 }

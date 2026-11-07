@@ -30,5 +30,11 @@
   },
   "confirmation_hint_screenshot_copied": {
     "message": "తెరపట్టు కాపీ అయ్యింది!"
+  },
+  "applications_always_ask_label": {
+    "message": "ఎల్లప్పుడు అడుగు"
+  },
+  "fonts_label_default_unnamed_label": {
+    "message": "అప్రమేయం"
   }
 }

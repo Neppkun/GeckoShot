@@ -96,5 +96,11 @@
   },
   "confirmation_hint_screenshot_copied": {
     "message": "스크린샷이 복사되었습니다!"
+  },
+  "applications_always_ask_label": {
+    "message": "항상 묻기"
+  },
+  "fonts_label_default_unnamed_label": {
+    "message": "기본"
   }
 }
