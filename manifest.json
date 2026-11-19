@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "GeckoShot",
   "description": "Select any part of a page and copy or save it as an image. Based on the Screenshots feature from Mozilla Firefox.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "default_locale": "en",
   "minimum_chrome_version": "123",
   "icons": {
