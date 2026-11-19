@@ -17,8 +17,15 @@ the same way Firefox does. The look is restyled to fit in with
 
 ## Install
 
-GeckoShot isn't in the Chrome Web Store yet. Get the latest version from the
-[Releases page](https://github.com/Neppkun/GeckoShot/releases/latest).
+The easiest way is the
+[Chrome Web Store](https://chromewebstore.google.com/detail/geckoshot/fcaecheabjiggcemefmjioklfgimcdon),
+which works in Chrome, Edge, Brave, Vivaldi and most other Chromium-based
+browsers, and keeps GeckoShot up to date for you.
+
+To install it by hand instead, get the latest version from the
+[Releases page](https://github.com/Neppkun/GeckoShot/releases/latest). This
+copy doesn't update itself, and it's a separate extension from the store one,
+so don't install both.
 
 **Chrome, Edge, Brave and Vivaldi** (these only allow store extensions to be
 installed from a file, so use the ZIP):
