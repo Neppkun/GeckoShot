@@ -96,5 +96,11 @@
   },
   "confirmation_hint_screenshot_copied": {
     "message": "Skjermbilde kopiert!"
+  },
+  "applications_always_ask_label": {
+    "message": "Spør alltid"
+  },
+  "fonts_label_default_unnamed_label": {
+    "message": "Standard"
   }
 }

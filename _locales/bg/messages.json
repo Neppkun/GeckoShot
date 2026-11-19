@@ -81,5 +81,11 @@
   },
   "confirmation_hint_screenshot_copied": {
     "message": "Екранната снимка е копирана!"
+  },
+  "applications_always_ask_label": {
+    "message": "Винаги да пита"
+  },
+  "fonts_label_default_unnamed_label": {
+    "message": "Стандартен"
   }
 }

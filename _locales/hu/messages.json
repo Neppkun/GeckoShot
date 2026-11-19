@@ -96,5 +96,11 @@
   },
   "confirmation_hint_screenshot_copied": {
     "message": "Képernyőkép másolva."
+  },
+  "applications_always_ask_label": {
+    "message": "Rákérdezés mindig"
+  },
+  "fonts_label_default_unnamed_label": {
+    "message": "Alapértelmezett"
   }
 }

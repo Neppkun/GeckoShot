@@ -1,4 +1,15 @@
 {
+  "screenshot_toolbar_button_label": {
+    "message": "Ekrānattēls"
+  },
+  "screenshot_toolbar_button_tooltiptext": {
+    "message": "Uzņemiet ekrānuzņēmumu ($SHORTCUT$)",
+    "placeholders": {
+      "shortcut": {
+        "content": "$1"
+      }
+    }
+  },
   "screenshots_instructions": {
     "message": "Velciet vai noklikšķiniet uz lapas, lai atlasītu reģionu. Nospiediet ESC, lai atceltu."
   },
@@ -85,5 +96,11 @@
   },
   "confirmation_hint_screenshot_copied": {
     "message": "Ekrānuzņēmums nokopēts!"
+  },
+  "applications_always_ask_label": {
+    "message": "Vienmēr vaicāt"
+  },
+  "fonts_label_default_unnamed_label": {
+    "message": "Noklusējums"
   }
 }

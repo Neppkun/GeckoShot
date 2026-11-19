@@ -96,5 +96,11 @@
   },
   "confirmation_hint_screenshot_copied": {
     "message": "Το στιγμιότυπο αντιγράφηκε!"
+  },
+  "applications_always_ask_label": {
+    "message": "Ερώτηση πάντα"
+  },
+  "fonts_label_default_unnamed_label": {
+    "message": "Προεπιλογή"
   }
 }

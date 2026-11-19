@@ -96,5 +96,11 @@
   },
   "confirmation_hint_screenshot_copied": {
     "message": "نماگرفت رونوشت شد!"
+  },
+  "applications_always_ask_label": {
+    "message": "همیشه پرسیده شود"
+  },
+  "fonts_label_default_unnamed_label": {
+    "message": "پیش‌فرض"
   }
 }

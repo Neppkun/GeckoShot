@@ -96,5 +96,11 @@
   },
   "confirmation_hint_screenshot_copied": {
     "message": "S'ha copiat la captura de pantalla"
+  },
+  "applications_always_ask_label": {
+    "message": "Demana-m'ho sempre"
+  },
+  "fonts_label_default_unnamed_label": {
+    "message": "Per defecte"
   }
 }

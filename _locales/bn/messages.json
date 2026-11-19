@@ -19,5 +19,11 @@
   },
   "confirmation_hint_screenshot_copied": {
     "message": "স্ক্রিনশট কপি করা হয়েছে!"
+  },
+  "applications_always_ask_label": {
+    "message": "সর্বদা জিজ্ঞাসা কর"
+  },
+  "fonts_label_default_unnamed_label": {
+    "message": "ডিফল্ট"
   }
 }

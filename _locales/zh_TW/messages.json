@@ -96,5 +96,11 @@
   },
   "confirmation_hint_screenshot_copied": {
     "message": "已複製擷圖！"
+  },
+  "applications_always_ask_label": {
+    "message": "總是詢問"
+  },
+  "fonts_label_default_unnamed_label": {
+    "message": "預設"
   }
 }

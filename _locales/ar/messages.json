@@ -96,5 +96,11 @@
   },
   "confirmation_hint_screenshot_copied": {
     "message": "نُسخت لقطة الشاشة!"
+  },
+  "applications_always_ask_label": {
+    "message": "اسأل دائمًا"
+  },
+  "fonts_label_default_unnamed_label": {
+    "message": "المبدئي"
   }
 }

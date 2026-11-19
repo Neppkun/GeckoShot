@@ -33,5 +33,11 @@
   },
   "main_context_menu_take_screenshot_accesskey": {
     "message": "T"
+  },
+  "applications_always_ask_label": {
+    "message": "हमेशा पूछें"
+  },
+  "fonts_label_default_unnamed_label": {
+    "message": "तयशुदा"
   }
 }

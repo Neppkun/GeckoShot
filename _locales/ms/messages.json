@@ -16,5 +16,11 @@
   },
   "main_context_menu_take_screenshot_accesskey": {
     "message": "s"
+  },
+  "applications_always_ask_label": {
+    "message": "Sentiasa tanya"
+  },
+  "fonts_label_default_unnamed_label": {
+    "message": "Piawai"
   }
 }

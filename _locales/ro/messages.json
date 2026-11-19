@@ -96,5 +96,11 @@
   },
   "confirmation_hint_screenshot_copied": {
     "message": "Captură de ecran copiată!"
+  },
+  "applications_always_ask_label": {
+    "message": "Întreabă întotdeauna"
+  },
+  "fonts_label_default_unnamed_label": {
+    "message": "Implicit"
   }
 }

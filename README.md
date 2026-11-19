@@ -59,6 +59,18 @@ Then:
 **Save visible** and **Save full page** open a preview first, where you can
 copy, download, retry or cancel.
 
+### Change the default action
+
+To change the default behaviour of **Take Screenshot**, open GeckoShot context menu from toolbar and choose an action under **Default**:
+
+- **Always ask**: open the screenshot tool described above. This is the
+  default.
+- **Save full page**: download the whole page right away, no preview.
+- **Save visible**: download what's on screen right away, no preview.
+
+Your choice applies to the toolbar button, the keyboard shortcut and **Take
+Screenshot** in the page's right-click menu.
+
 Files are named like the ones Firefox saves, for example
 `Screenshot 2026-10-22 at 14-03-51 Page title.png`, and go wherever your
 browser saves downloads. If you've set your browser to ask where to save files,

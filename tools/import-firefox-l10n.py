@@ -37,6 +37,8 @@ WANTED = {
     ],
     "browserContext.ftl": ["main-context-menu-take-screenshot"],
     "confirmationHints.ftl": ["confirmation-hint-screenshot-copied"],
+    "preferences/preferences.ftl": ["applications-always-ask"],
+    "preferences/fonts.ftl": ["fonts-label-default-unnamed"],
 }
 
 # Fluent variable -> Chrome positional substitution.

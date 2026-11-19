@@ -96,5 +96,11 @@
   },
   "confirmation_hint_screenshot_copied": {
     "message": "スクリーンショットをコピーしました！"
+  },
+  "applications_always_ask_label": {
+    "message": "毎回確認する"
+  },
+  "fonts_label_default_unnamed_label": {
+    "message": "既定"
   }
 }

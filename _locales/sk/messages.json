@@ -96,5 +96,11 @@
   },
   "confirmation_hint_screenshot_copied": {
     "message": "Snímka obrazovky bola skopírovaná!"
+  },
+  "applications_always_ask_label": {
+    "message": "Vždy sa opýtať"
+  },
+  "fonts_label_default_unnamed_label": {
+    "message": "Predvolené"
   }
 }

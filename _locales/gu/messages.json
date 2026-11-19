@@ -10,5 +10,11 @@
   },
   "screenshots_save_page_button": {
     "message": "સંપૂર્ણ પૃષ્ઠ સાચવો"
+  },
+  "applications_always_ask_label": {
+    "message": "હંમેશા પૂછો"
+  },
+  "fonts_label_default_unnamed_label": {
+    "message": "મૂળભૂત"
   }
 }

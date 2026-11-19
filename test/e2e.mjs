@@ -362,6 +362,43 @@ try {
     assert.deepEqual(size, [120, 60]);
   });
 
+  /** The toolbar button / shortcut with a default picked in its context menu. */
+  async function toggleWithDefault(defaultAction) {
+    await worker.evaluate(async defaultAction => {
+      await chrome.storage.local.set({ defaultAction });
+      let [tab] = await chrome.tabs.query({ active: true, lastFocusedWindow: true });
+      await toggleDefault(tab);
+    }, defaultAction);
+  }
+
+  await step("default-fullpage-downloads-directly", async () => {
+    await tab.evaluate(() => scrollTo(0, 300));
+    await toggleWithDefault("fullpage");
+    let png = fs.readFileSync((await nextDownload()).filename);
+    let pageHeight = await tab.evaluate(() => document.documentElement.scrollHeight);
+    assert.deepEqual(pngSize(png), { width: 1000, height: pageHeight });
+    // Fixed header once, at the top.
+    assert.deepEqual(await pixelAt(png, 500, 10), [255, 0, 0]);
+    assert.notDeepEqual(await pixelAt(png, 500, 710), [255, 0, 0]);
+    assert.equal(await tab.locator("moz-screenshots, dialog").count(), 0, "no overlay or preview");
+    assert.equal(await tab.evaluate(() => scrollY), 300, "scroll position restored");
+    await tab.evaluate(() => scrollTo(0, 0));
+  });
+
+  await step("default-visible-downloads-directly", async () => {
+    await toggleWithDefault("visible");
+    let png = fs.readFileSync((await nextDownload()).filename);
+    assert.deepEqual(pngSize(png), { width: 1000, height: 700 });
+    assert.equal(await tab.locator("moz-screenshots, dialog").count(), 0, "no overlay or preview");
+  });
+
+  await step("default-ask-shows-panel", async () => {
+    await toggleWithDefault("ask");
+    await panel.locator("#visible-page").waitFor();
+    await toggle();
+    await tab.locator("moz-screenshots").waitFor({ state: "detached" });
+  });
+
   assert.deepEqual(errors, [], "no page errors");
   console.log(`all passed; screenshots in ${outDir}`);
 } finally {

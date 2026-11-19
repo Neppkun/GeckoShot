@@ -19,5 +19,11 @@
   },
   "main_context_menu_take_screenshot_accesskey": {
     "message": "K"
+  },
+  "applications_always_ask_label": {
+    "message": "Palaging itanong"
+  },
+  "fonts_label_default_unnamed_label": {
+    "message": "Default"
   }
 }

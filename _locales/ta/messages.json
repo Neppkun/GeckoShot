@@ -10,5 +10,11 @@
   },
   "screenshots_save_page_button": {
     "message": "முழு பக்கத்தைச் சேமி"
+  },
+  "applications_always_ask_label": {
+    "message": "எப்போதும் கேள"
+  },
+  "fonts_label_default_unnamed_label": {
+    "message": "இயல்புநிலை"
   }
 }

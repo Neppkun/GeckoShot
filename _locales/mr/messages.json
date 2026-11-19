@@ -10,5 +10,11 @@
   },
   "screenshots_save_page_button": {
     "message": "संपूर्ण पृष्ठ साठवा"
+  },
+  "applications_always_ask_label": {
+    "message": "नेहमी विचारा"
+  },
+  "fonts_label_default_unnamed_label": {
+    "message": "पूर्वनिर्धारीत"
   }
 }
